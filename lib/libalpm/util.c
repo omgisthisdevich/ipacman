@@ -955,10 +955,11 @@ const char *_alpm_filecache_setup(alpm_handle_t *handle)
  */
 char *_alpm_temporary_download_dir_setup(const char *dir, const char *user)
 {
+	uid_t myuid = getuid();
 	struct passwd const *pw = NULL;
 
 	ASSERT(dir != NULL, return NULL);
-	if(user != NULL) {
+	if(myuid == 0 && user != NULL) {
 		ASSERT((pw = getpwnam(user)) != NULL, return NULL);
 	}
 
