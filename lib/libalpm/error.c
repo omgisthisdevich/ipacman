@@ -138,6 +138,8 @@ const char SYMEXPORT *alpm_strerror(alpm_errno_t err)
 		case ALPM_ERR_FILE_CONFLICTS:
 			return _("conflicting files");
 		/* Miscellaneous */
+		case ALPM_ERR_RETRIEVE_PREPARE:
+			return _("failed to initialize download");
 		case ALPM_ERR_RETRIEVE:
 			return _("failed to retrieve some files");
 		case ALPM_ERR_INVALID_REGEX:

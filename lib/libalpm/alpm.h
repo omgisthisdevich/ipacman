@@ -308,6 +308,8 @@ typedef enum _alpm_errno_t {
 	/** Files conflict */
 	ALPM_ERR_FILE_CONFLICTS,
 	/* Misc */
+	/** Download setup failed */
+	ALPM_ERR_RETRIEVE_PREPARE,
 	/** Download failed */
 	ALPM_ERR_RETRIEVE,
 	/** Invalid Regex */

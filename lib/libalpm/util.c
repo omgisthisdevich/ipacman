@@ -974,7 +974,7 @@ char *_alpm_temporary_download_dir_setup(alpm_handle_t *handle, const char *dir)
 						_("failed to get download user '%s': %s\n"),
 						user, strerror(errno));
 			}
-			RET_ERR(handle, ALPM_ERR_RETRIEVE, NULL);
+			RET_ERR(handle, ALPM_ERR_RETRIEVE_PREPARE, NULL);
 		}
 	}
 
@@ -988,7 +988,7 @@ char *_alpm_temporary_download_dir_setup(alpm_handle_t *handle, const char *dir)
 				_("failed to create temporary download directory %s: %s\n"),
 				newdir, strerror(errno));
 		free(newdir);
-		RET_ERR(handle, ALPM_ERR_RETRIEVE, NULL);
+		RET_ERR(handle, ALPM_ERR_RETRIEVE_PREPARE, NULL);
 	}
 	if(pw != NULL) {
 		if(chown(newdir, pw->pw_uid, pw->pw_gid) == -1) {
@@ -996,7 +996,7 @@ char *_alpm_temporary_download_dir_setup(alpm_handle_t *handle, const char *dir)
 					_("failed to chown temporary download directory %s: %s\n"),
 					newdir, strerror(errno));
 			free(newdir);
-			RET_ERR(handle, ALPM_ERR_RETRIEVE, NULL);
+			RET_ERR(handle, ALPM_ERR_RETRIEVE_PREPARE, NULL);
 		}
 	}
 	newdir[newdirlen-2] = '/';
