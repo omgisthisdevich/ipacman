@@ -23,6 +23,7 @@
  */
 
 #include <stdlib.h>
+#include <string.h>
 #include <unistd.h>
 #include <ctype.h>
 #include <dirent.h>
@@ -959,24 +960,43 @@ char *_alpm_temporary_download_dir_setup(alpm_handle_t *handle, const char *dir)
 	uid_t myuid = getuid();
 	struct passwd const *pw = NULL;
 
-	ASSERT(dir != NULL, return NULL);
+	ASSERT(dir != NULL, RET_ERR(handle, ALPM_ERR_WRONG_ARGS, NULL));
 	if(myuid == 0 && user != NULL) {
-		ASSERT((pw = getpwnam(user)) != NULL, return NULL);
+		errno = 0;
+		pw = getpwnam(user);
+
+		if(pw == NULL) {
+			if(errno == 0) {
+				_alpm_log(handle, ALPM_LOG_ERROR,
+						_("download user '%s' does not exist\n"), user);
+			} else {
+				_alpm_log(handle, ALPM_LOG_ERROR,
+						_("failed to get download user '%s': %s\n"),
+						user, strerror(errno));
+			}
+			RET_ERR(handle, ALPM_ERR_RETRIEVE, NULL);
+		}
 	}
 
 	const char template[] = "download-XXXXXX";
 	size_t newdirlen = strlen(dir) + sizeof(template) + 1;
 	char *newdir = NULL;
-	MALLOC(newdir, newdirlen, return NULL);
+	MALLOC(newdir, newdirlen, RET_ERR(handle, ALPM_ERR_MEMORY, NULL));
 	snprintf(newdir, newdirlen - 1, "%s%s", dir, template);
 	if(mkdtemp(newdir) == NULL) {
+		_alpm_log(handle, ALPM_LOG_ERROR,
+				_("failed to create temporary download directory %s: %s\n"),
+				newdir, strerror(errno));
 		free(newdir);
-		return NULL;
+		RET_ERR(handle, ALPM_ERR_RETRIEVE, NULL);
 	}
 	if(pw != NULL) {
 		if(chown(newdir, pw->pw_uid, pw->pw_gid) == -1) {
+			_alpm_log(handle, ALPM_LOG_ERROR,
+					_("failed to chown temporary download directory %s: %s\n"),
+					newdir, strerror(errno));
 			free(newdir);
-			return NULL;
+			RET_ERR(handle, ALPM_ERR_RETRIEVE, NULL);
 		}
 	}
 	newdir[newdirlen-2] = '/';
