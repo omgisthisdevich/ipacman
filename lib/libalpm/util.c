@@ -949,12 +949,13 @@ const char *_alpm_filecache_setup(alpm_handle_t *handle)
 /** Create a temporary directory under the supplied directory.
  * The new directory is writable by the download user, and will be
  * removed after the download operation has completed.
+ * @param handle an alpm handle
  * @param dir existing sync or cache directory
- * @param user download user name
  * @return pointer to a sub-directory writable by the download user inside the existing directory.
  */
-char *_alpm_temporary_download_dir_setup(const char *dir, const char *user)
+char *_alpm_temporary_download_dir_setup(alpm_handle_t *handle, const char *dir)
 {
+	const char *user = handle->sandboxuser;
 	uid_t myuid = getuid();
 	struct passwd const *pw = NULL;
 

@@ -153,7 +153,7 @@ int SYMEXPORT alpm_db_update(alpm_handle_t *handle, alpm_list_t *dbs, int force)
 
 	syncpath = get_sync_dir(handle);
 	ASSERT(syncpath != NULL, return -1);
-	temporary_syncpath = _alpm_temporary_download_dir_setup(syncpath, handle->sandboxuser);
+	temporary_syncpath = _alpm_temporary_download_dir_setup(handle, syncpath);
 	ASSERT(temporary_syncpath != NULL, FREE(syncpath); return -1);
 
 	/* make sure we have a sane umask */

@@ -1304,7 +1304,7 @@ int SYMEXPORT alpm_fetch_pkgurl(alpm_handle_t *handle, const alpm_list_t *urls,
 
 	/* find a valid cache dir to download to */
 	cachedir = _alpm_filecache_setup(handle);
-	temporary_cachedir = _alpm_temporary_download_dir_setup(cachedir, handle->sandboxuser);
+	temporary_cachedir = _alpm_temporary_download_dir_setup(handle, cachedir);
 	ASSERT(temporary_cachedir != NULL, return -1);
 
 	for(i = urls; i; i = i->next) {
