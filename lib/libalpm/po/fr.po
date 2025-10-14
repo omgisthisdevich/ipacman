@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR "Pacman Development Team <pacman-dev@archlinux.org>"
 # This file is distributed under the same license as the libalpm package.
-#
+# 
 # Translators:
 # Allan McRae <allan@archlinux.org>, 2018
 # Antoine Lubineau <antoine@lubignon.info>, 2012-2013
@@ -22,17 +22,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arch Linux Pacman package manager\n"
 "Report-Msgid-Bugs-To: https://gitlab.archlinux.org/pacman/pacman/-/issues\n"
-"POT-Creation-Date: 2024-07-14 19:10+1000\n"
+"POT-Creation-Date: 2024-07-02 10:33+1000\n"
 "PO-Revision-Date: 2010-11-29 23:17+0000\n"
 "Last-Translator: Xavier Devlamynck <magicrhesus@ouranos.be>, 2011\n"
-"Language-Team: French (http://app.transifex.com/toofishes/archlinux-pacman/"
-"language/fr/)\n"
-"Language: fr\n"
+"Language-Team: French (http://app.transifex.com/toofishes/archlinux-pacman/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
-"1000000 == 0 ? 1 : 2;\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: lib/libalpm/add.c:90 lib/libalpm/sync.c:279
 #, c-format
@@ -72,9 +70,7 @@ msgstr "impossible de renommer %s en %s (%s)\n"
 #: lib/libalpm/add.c:210
 #, c-format
 msgid "file not found in file list for package %s. skipping extraction of %s\n"
-msgstr ""
-"fichier non trouvé dans la liste des fichiers du paquet %s. Extraction de %s "
-"ignorée\n"
+msgstr "fichier non trouvé dans la liste des fichiers du paquet %s. Extraction de %s ignorée\n"
 
 #: lib/libalpm/add.c:219
 #, c-format
@@ -86,18 +82,14 @@ msgstr "impossible d’extraire %s%s : chemin trop long"
 msgid ""
 "directory permissions differ on %s\n"
 "filesystem: %o  package: %o\n"
-msgstr ""
-"les permissions pour le répertoire %s sont différentes\n"
-"système de fichiers : %o, paquet : %o\n"
+msgstr "les permissions pour le répertoire %s sont différentes\nsystème de fichiers : %o, paquet : %o\n"
 
 #: lib/libalpm/add.c:276
 #, c-format
 msgid ""
 "directory ownership differs on %s\n"
 "filesystem: %u:%u  package: %u:%u\n"
-msgstr ""
-"le propriétaire du répertoire %s est différent\n"
-"système de fichiers : %u:%u, paquet : %u:%u\n"
+msgstr "le propriétaire du répertoire %s est différent\nsystème de fichiers : %u:%u, paquet : %u:%u\n"
 
 #: lib/libalpm/add.c:292
 #, c-format
@@ -267,9 +259,7 @@ msgstr "suppression du fichier non valide : %s\n"
 #: lib/libalpm/be_sync.c:471
 #, c-format
 msgid "could not parse package description file '%s' from db '%s'\n"
-msgstr ""
-"impossible d’analyser le fichier « %s » de description du paquet depuis la "
-"base de données « %s »\n"
+msgstr "impossible d’analyser le fichier « %s » de description du paquet depuis la base de données « %s »\n"
 
 #: lib/libalpm/be_sync.c:486
 #, c-format
@@ -279,14 +269,12 @@ msgstr "impossible de lire la base de données « %s » (%s)\n"
 #: lib/libalpm/be_sync.c:519 lib/libalpm/be_sync.c:524
 #, c-format
 msgid "%s database is inconsistent: filename of package %s is illegal\n"
-msgstr ""
-"le dépôt %s est incohérent : le nom de fichier du paquet %s est incorrect\n"
+msgstr "le dépôt %s est incohérent : le nom de fichier du paquet %s est incorrect\n"
 
 #: lib/libalpm/be_sync.c:529
 #, c-format
 msgid "%s database is inconsistent: filename of package %s is too long\n"
-msgstr ""
-"le dépôt %s est incohérent : le nom de fichier du paquet %s est trop long\n"
+msgstr "le dépôt %s est incohérent : le nom de fichier du paquet %s est trop long\n"
 
 #: lib/libalpm/be_sync.c:594
 #, c-format
@@ -331,9 +319,7 @@ msgstr "impossible de résoudre « %s », une dépendance de « %s »\n"
 #: lib/libalpm/diskspace.c:78
 #, c-format
 msgid "could not get filesystem information for %s: %s\n"
-msgstr ""
-"impossible de récupérer les informations du système de fichiers pour %s : "
-"%s\n"
+msgstr "impossible de récupérer les informations du système de fichiers pour %s : %s\n"
 
 #: lib/libalpm/diskspace.c:108
 #, c-format
@@ -409,9 +395,7 @@ msgstr "échec de récupération du fichier « %s » depuis %s : %s\n"
 #: lib/libalpm/dload.c:562
 #, c-format
 msgid "failed retrieving file '%s' from %s : expected download size exceeded\n"
-msgstr ""
-"échec de récupération du fichier « %s » depuis %s : taille attendue "
-"dépassée\n"
+msgstr "échec de récupération du fichier « %s » depuis %s : taille attendue dépassée\n"
 
 #: lib/libalpm/dload.c:685
 #, c-format
@@ -423,37 +407,37 @@ msgstr "%s est apparemment tronqué : %jd/%jd octets\n"
 msgid "url '%s' is invalid\n"
 msgstr "l’URL « %s » est non valide\n"
 
-#: lib/libalpm/dload.c:864
+#: lib/libalpm/dload.c:861
 #, c-format
 msgid "failed to setup a download payload for %s\n"
 msgstr "échec à initialiser une tâche de téléchargement pour %s\n"
 
-#: lib/libalpm/dload.c:876
+#: lib/libalpm/dload.c:873
 #, c-format
 msgid "curl returned error %d from transfer\n"
 msgstr "curl a retourné l'erreur %dpour le transfert\n"
 
-#: lib/libalpm/dload.c:900
+#: lib/libalpm/dload.c:897
 #, c-format
 msgid "curl transfer error: %d\n"
 msgstr "erreur de curl pour le transfert: %d\n"
 
-#: lib/libalpm/dload.c:963
+#: lib/libalpm/dload.c:959
 #, c-format
 msgid "could not chdir to download directory %s\n"
 msgstr "impossible de se placer dans le répertoire de téléchargement %s\n"
 
-#: lib/libalpm/dload.c:968
+#: lib/libalpm/dload.c:964
 #, c-format
 msgid "switching to sandbox user '%s' failed!\n"
 msgstr ""
 
-#: lib/libalpm/dload.c:1361 lib/libalpm/sync.c:861
+#: lib/libalpm/dload.c:1357 lib/libalpm/sync.c:861
 #, c-format
 msgid "failed to retrieve some files\n"
 msgstr "erreur lors de la récupération de certains fichiers\n"
 
-#: lib/libalpm/dload.c:1384
+#: lib/libalpm/dload.c:1380
 #, c-format
 msgid "download completed successfully but no file in the cache\n"
 msgstr "téléchargement terminé avec succès mais aucun fichier dans le cache\n"
@@ -606,9 +590,7 @@ msgstr "opération incompatible avec le type de transaction"
 #: lib/libalpm/error.c:104
 #, c-format
 msgid "transaction commit attempt when database is not locked"
-msgstr ""
-"tentative de réalisation d’une transaction alors que le dépôt n’est pas "
-"verrouillé"
+msgstr "tentative de réalisation d’une transaction alors que le dépôt n’est pas verrouillé"
 
 #: lib/libalpm/error.c:106
 #, c-format
@@ -830,8 +812,7 @@ msgstr "impossible de lire le répertoire : %s : %s\n"
 #: lib/libalpm/package.c:614
 #, c-format
 msgid "could not fully load metadata for package %s-%s\n"
-msgstr ""
-"les métadonnées pour le paquet %s-%s n’ont pas pu être totalement chargées.\n"
+msgstr "les métadonnées pour le paquet %s-%s n’ont pas pu être totalement chargées.\n"
 
 #: lib/libalpm/package.c:869
 #, c-format
@@ -861,8 +842,7 @@ msgstr ""
 
 #: lib/libalpm/package.c:895
 #, c-format
-msgid ""
-"invalid metadata for package %s-%s (package name and version too long)\n"
+msgid "invalid metadata for package %s-%s (package name and version too long)\n"
 msgstr ""
 
 #: lib/libalpm/remove.c:111
@@ -903,8 +883,7 @@ msgstr "la suppression du cache de l’entrée « %s » a échoué\n"
 #: lib/libalpm/signing.c:163
 #, c-format
 msgid "Public keyring not found; have you run '%s'?\n"
-msgstr ""
-"Le trousseau de clés publique est introuvable ; avez-vous exécuté « %s » ?\n"
+msgstr "Le trousseau de clés publique est introuvable ; avez-vous exécuté « %s » ?\n"
 
 #: lib/libalpm/signing.c:199 lib/libalpm/signing.c:773
 #, c-format
@@ -1036,9 +1015,7 @@ msgstr "un conflit de paquets impossible à résoudre a été détecté\n"
 #: lib/libalpm/sync.c:566
 #, c-format
 msgid "removing '%s-%s' from target list because it conflicts with '%s-%s'\n"
-msgstr ""
-"suppression de « %s-%s » de la liste cible car cela entre en conflit avec "
-"« %s-%s »\n"
+msgstr "suppression de « %s-%s » de la liste cible car cela entre en conflit avec « %s-%s »\n"
 
 #: lib/libalpm/sync.c:1020 lib/libalpm/sync.c:1187
 #, c-format
@@ -1088,9 +1065,7 @@ msgstr "la suppression du répertoire temporaire %s a échoué\n"
 #: lib/libalpm/util.c:512
 #, c-format
 msgid "unable to write to pipe (%s)\n"
-msgstr ""
-"impossible d’écrire dans le tube (%s)\n"
-"\n"
+msgstr "impossible d’écrire dans le tube (%s)\n\n"
 
 #: lib/libalpm/util.c:571
 #, c-format
@@ -1145,6 +1120,4 @@ msgstr "le cache %s n’existe pas, création…\n"
 #: lib/libalpm/util.c:947
 #, c-format
 msgid "couldn't find or create package cache, using %s instead\n"
-msgstr ""
-"impossible de trouver ou de créer le cache des paquets, utilisation de %s à "
-"la place\n"
+msgstr "impossible de trouver ou de créer le cache des paquets, utilisation de %s à la place\n"

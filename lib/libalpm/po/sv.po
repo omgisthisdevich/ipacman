@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR "Pacman Development Team <pacman-dev@archlinux.org>"
 # This file is distributed under the same license as the libalpm package.
-#
+# 
 # Translators:
 # , 2011
 # 0x9fff00, 2019
 # 0x9fff00 ​, 2019
 # August Wikerfors, 2019
 # August Wikerfors, 2019,2023
-# August Wikerfors, 2023
+# August Wikerfors, 2023,2025
 # Daniel Sandman <revoltism@gmail.com>, 2013,2015
 # Johan R. <jreinhed@protonmail.com>, 2019
 # Kim Svensson <ks@linux.com>, 2015
@@ -20,15 +20,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arch Linux Pacman package manager\n"
 "Report-Msgid-Bugs-To: https://gitlab.archlinux.org/pacman/pacman/-/issues\n"
-"POT-Creation-Date: 2024-07-14 19:10+1000\n"
+"POT-Creation-Date: 2024-07-02 10:33+1000\n"
 "PO-Revision-Date: 2010-11-29 23:17+0000\n"
-"Last-Translator: riiga <riiga_92@hotmail.com>, 2024\n"
-"Language-Team: Swedish (http://app.transifex.com/toofishes/archlinux-pacman/"
-"language/sv/)\n"
-"Language: sv\n"
+"Last-Translator: August Wikerfors, 2023,2025\n"
+"Language-Team: Swedish (http://app.transifex.com/toofishes/archlinux-pacman/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lib/libalpm/add.c:90 lib/libalpm/sync.c:279
@@ -81,18 +80,14 @@ msgstr "kunde inte extrahera %s%s: sökvägen är för lång"
 msgid ""
 "directory permissions differ on %s\n"
 "filesystem: %o  package: %o\n"
-msgstr ""
-"katalogrättigheter skiljer sig på %s\n"
-"filsystem: %o  paket: %o\n"
+msgstr "katalogrättigheter skiljer sig på %s\nfilsystem: %o  paket: %o\n"
 
 #: lib/libalpm/add.c:276
 #, c-format
 msgid ""
 "directory ownership differs on %s\n"
 "filesystem: %u:%u  package: %u:%u\n"
-msgstr ""
-"katalogens ägare skiljer sig på %s\n"
-"filsystem: %u:%u paket: %u:%u\n"
+msgstr "katalogens ägare skiljer sig på %s\nfilsystem: %u:%u paket: %u:%u\n"
 
 #: lib/libalpm/add.c:292
 #, c-format
@@ -173,7 +168,7 @@ msgstr "korrupt databasinlägg '%s'\n"
 #: lib/libalpm/be_local.c:663
 #, c-format
 msgid "unknown install reason for package %s: %s\n"
-msgstr "okänd installationsandledning för paket %s: %s\n"
+msgstr "okänd installationsanledning för paket %s: %s\n"
 
 #: lib/libalpm/be_local.c:743 lib/libalpm/be_local.c:856
 #: lib/libalpm/be_local.c:996 lib/libalpm/be_local.c:1102
@@ -272,9 +267,7 @@ msgstr "kunde inte läsa db '%s'(%s)\n"
 #: lib/libalpm/be_sync.c:519 lib/libalpm/be_sync.c:524
 #, c-format
 msgid "%s database is inconsistent: filename of package %s is illegal\n"
-msgstr ""
-"%s databasen är inkonsekvent: namn på paketet %s är ogiltig⏎\n"
-"\n"
+msgstr "%s databasen är inkonsekvent: namn på paketet %s är ogiltig⏎\n\n"
 
 #: lib/libalpm/be_sync.c:529
 #, c-format
@@ -385,8 +378,7 @@ msgstr "för många fel från %s, hoppar över under resten av denna transaktion
 #: lib/libalpm/dload.c:215
 #, c-format
 msgid "fatal error from %s, skipping for the remainder of this transaction\n"
-msgstr ""
-"allvarligt fel från %s, hoppar över under resten av denna transaktion\n"
+msgstr "allvarligt fel från %s, hoppar över under resten av denna transaktion\n"
 
 #: lib/libalpm/dload.c:310
 #, c-format
@@ -401,9 +393,7 @@ msgstr "misslyckades hämta filen '%s' från %s : %s\n"
 #: lib/libalpm/dload.c:562
 #, c-format
 msgid "failed retrieving file '%s' from %s : expected download size exceeded\n"
-msgstr ""
-"misslyckades hämta filen '%s' från %s : förväntad nedladdningsstorlek "
-"överskreds\n"
+msgstr "misslyckades hämta filen '%s' från %s : förväntad nedladdningsstorlek överskreds\n"
 
 #: lib/libalpm/dload.c:685
 #, c-format
@@ -415,37 +405,37 @@ msgstr "%s verkar vara trunkerad: %jd/%jd bytes\n"
 msgid "url '%s' is invalid\n"
 msgstr "url '%s' är ogiltigt\n"
 
-#: lib/libalpm/dload.c:864
+#: lib/libalpm/dload.c:861
 #, c-format
 msgid "failed to setup a download payload for %s\n"
 msgstr "misslyckades med att ställa in en nyttolast för %s\n"
 
-#: lib/libalpm/dload.c:876
+#: lib/libalpm/dload.c:873
 #, c-format
 msgid "curl returned error %d from transfer\n"
 msgstr "curl returnerade fel %d från överföring\n"
 
-#: lib/libalpm/dload.c:900
+#: lib/libalpm/dload.c:897
 #, c-format
 msgid "curl transfer error: %d\n"
 msgstr "curl överföringsfel: %d\n"
 
-#: lib/libalpm/dload.c:963
+#: lib/libalpm/dload.c:959
 #, c-format
 msgid "could not chdir to download directory %s\n"
 msgstr "Kunde inte flytta till nedladdningskatalogen %s\n"
 
-#: lib/libalpm/dload.c:968
+#: lib/libalpm/dload.c:964
 #, c-format
 msgid "switching to sandbox user '%s' failed!\n"
-msgstr ""
+msgstr "byte till sandlådeanvändaren '%s' misslyckades!\n"
 
-#: lib/libalpm/dload.c:1361 lib/libalpm/sync.c:861
+#: lib/libalpm/dload.c:1357 lib/libalpm/sync.c:861
 #, c-format
 msgid "failed to retrieve some files\n"
 msgstr "misslyckades att hämta några filer⏎\n"
 
-#: lib/libalpm/dload.c:1384
+#: lib/libalpm/dload.c:1380
 #, c-format
 msgid "download completed successfully but no file in the cache\n"
 msgstr "nedladdningen är klar men ingen fil i cachen\n"
@@ -832,30 +822,25 @@ msgstr "ogiltig paketmetadata (namn eller version saknas)"
 msgid ""
 "invalid metadata for package %s-%s (package name cannot start with '.' or "
 "'-')\n"
-msgstr ""
-"ogiltig metadata för paket %s-%s (paketnamn kan inte börja med '.' eller "
-"'-')\n"
+msgstr "ogiltig metadata för paket %s-%s (paketnamn kan inte börja med '.' eller '-')\n"
 
 #: lib/libalpm/package.c:878
 #, c-format
 msgid ""
 "invalid metadata for package %s-%s (package name contains invalid "
 "characters)\n"
-msgstr ""
-"ogiltig metadata för paket %s-%s (paketnamn innehåller ogiltiga tecken)\n"
+msgstr "ogiltig metadata för paket %s-%s (paketnamn innehåller ogiltiga tecken)\n"
 
 #: lib/libalpm/package.c:885 lib/libalpm/package.c:889
 #, c-format
 msgid ""
 "invalid metadata for package %s-%s (package version contains invalid "
 "characters)\n"
-msgstr ""
-"ogiltig metadata för paket %s-%s (paketversion innehåller ogiltiga tecken)\n"
+msgstr "ogiltig metadata för paket %s-%s (paketversion innehåller ogiltiga tecken)\n"
 
 #: lib/libalpm/package.c:895
 #, c-format
-msgid ""
-"invalid metadata for package %s-%s (package name and version too long)\n"
+msgid "invalid metadata for package %s-%s (package name and version too long)\n"
 msgstr "ogiltig metadata för paket %s-%s (paketnamn och version för lång)\n"
 
 #: lib/libalpm/remove.c:111

@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR "Pacman Development Team <pacman-dev@lists.archlinux.org>"
 # This file is distributed under the same license as the pacman-scripts package.
-#
+# 
 # Translators:
 # 0x9fff00 ​, 2019
 # August Wikerfors, 2019-2020
 # 5295d3138ea8e00b2d2de31bd11919f3_81fe320 <1c0cea16b463ff899b2572870c868ca5_659576>, 2018
 # August Wikerfors, 2023
-# August Wikerfors, 2023
+# August Wikerfors, 2023,2025
 # Daniel Sandman <revoltism@gmail.com>, 2013,2015
 # Johannes Löthberg <johannes@kyriasis.com>, 2015
 # Kim Svensson <ks6g10@soton.ac.uk>, 2012
@@ -21,15 +21,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arch Linux Pacman package manager\n"
 "Report-Msgid-Bugs-To: https://gitlab.archlinux.org/pacman/pacman/-/issues\n"
-"POT-Creation-Date: 2024-07-14 19:10+1000\n"
+"POT-Creation-Date: 2024-07-02 10:33+1000\n"
 "PO-Revision-Date: 2011-08-08 22:35+0000\n"
-"Last-Translator: riiga <riiga_92@hotmail.com>, 2024\n"
-"Language-Team: Swedish (http://app.transifex.com/toofishes/archlinux-pacman/"
-"language/sv/)\n"
-"Language: sv\n"
+"Last-Translator: August Wikerfors, 2023,2025\n"
+"Language-Team: Swedish (http://app.transifex.com/toofishes/archlinux-pacman/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: scripts/makepkg.sh.in:141
@@ -76,12 +75,12 @@ msgstr "Kunde inte hitta källkodsfil %s."
 #: scripts/libmakepkg/source/file.sh.in:75
 #: scripts/libmakepkg/source/file.sh.in:145
 #: scripts/libmakepkg/source/git.sh.in:54
-#: scripts/libmakepkg/source/git.sh.in:66
-#: scripts/libmakepkg/source/git.sh.in:102
-#: scripts/libmakepkg/source/git.sh.in:108
-#: scripts/libmakepkg/source/git.sh.in:125
-#: scripts/libmakepkg/source/git.sh.in:134
-#: scripts/libmakepkg/source/git.sh.in:142
+#: scripts/libmakepkg/source/git.sh.in:63
+#: scripts/libmakepkg/source/git.sh.in:99
+#: scripts/libmakepkg/source/git.sh.in:105
+#: scripts/libmakepkg/source/git.sh.in:122
+#: scripts/libmakepkg/source/git.sh.in:131
+#: scripts/libmakepkg/source/git.sh.in:139
 #: scripts/libmakepkg/source/hg.sh.in:52 scripts/libmakepkg/source/hg.sh.in:94
 #: scripts/libmakepkg/source/hg.sh.in:103
 #: scripts/libmakepkg/source/hg.sh.in:108
@@ -208,10 +207,9 @@ msgid "The package group has already been built. (use %s to overwrite)"
 msgstr "Paketgruppen har redan blivit byggd. (använd %s för att skriva över)"
 
 #: scripts/makepkg.sh.in:822
-msgid "Part of the package group has already been built. (use %s to overwrite)"
-msgstr ""
-"En del av paketgruppen har redan blivit byggd. (använd %s för att skriva "
-"över)"
+msgid ""
+"Part of the package group has already been built. (use %s to overwrite)"
+msgstr "En del av paketgruppen har redan blivit byggd. (använd %s för att skriva över)"
 
 #: scripts/makepkg.sh.in:876
 msgid "Make packages compatible for use with pacman"
@@ -242,13 +240,13 @@ msgid "  -d, --nodeps     Skip all dependency checks"
 msgstr "  -d, --nodeps     Hoppa över alla beroendekontroller"
 
 #: scripts/makepkg.sh.in:885
-msgid "  -D, --dir <dir>  Change to directory <dir> before processing PKGBUILD"
+msgid ""
+"  -D, --dir <dir>  Change to directory <dir> before processing PKGBUILD"
 msgstr "  -D, --dir <dir>  Ändra till katalog<dir> innan PKGBUILD bearbetas"
 
 #: scripts/makepkg.sh.in:886
 msgid "  -e, --noextract  Do not extract source files (use existing %s dir)"
-msgstr ""
-"-e, --noextract Extrahera inte källfiler (använd existerande %s katalog)"
+msgstr "-e, --noextract Extrahera inte källfiler (använd existerande %s katalog)"
 
 #: scripts/makepkg.sh.in:887
 msgid "  -f, --force      Overwrite existing package"
@@ -288,7 +286,8 @@ msgid ""
 msgstr "  -r, --rmdeps     Ta bort installerade beroenden efter lyckat bygge"
 
 #: scripts/makepkg.sh.in:896
-msgid "  -R, --repackage  Repackage contents of the package without rebuilding"
+msgid ""
+"  -R, --repackage  Repackage contents of the package without rebuilding"
 msgstr "  -R, --repackage  Packa om innehållet i paketet utan att bygga om"
 
 #: scripts/makepkg.sh.in:897
@@ -298,9 +297,7 @@ msgstr "-s, --syncdeps Installera saknade beroenden med %s"
 #: scripts/makepkg.sh.in:898
 msgid ""
 "  -S, --source     Generate a source-only tarball without downloaded sources"
-msgstr ""
-"-S, --source Generera en tarball med enbart källkod utan nerladdade "
-"källkodsfiler"
+msgstr "-S, --source Generera en tarball med enbart källkod utan nerladdade källkodsfiler"
 
 #: scripts/makepkg.sh.in:899
 msgid "  -V, --version    Show version information and exit"
@@ -310,9 +307,7 @@ msgstr "-V, --version Visa versionsinformation och avsluta"
 msgid ""
 "  --allsource      Generate a source-only tarball including downloaded "
 "sources"
-msgstr ""
-"      --allsource  Generera en tarball innehållandes enbart nerladdade "
-"källkodsfiler"
+msgstr "      --allsource  Generera en tarball innehållandes enbart nerladdade källkodsfiler"
 
 #: scripts/makepkg.sh.in:901
 msgid "  --check          Run the %s function in the %s"
@@ -320,8 +315,7 @@ msgstr "--check Kör %s funktionen i %s"
 
 #: scripts/makepkg.sh.in:902
 msgid "  --config <file>  Use an alternate config file (instead of '%s')"
-msgstr ""
-"  --config <file> Använd en alternativ konfigurationsfil (istället för '%s')"
+msgstr "  --config <file> Använd en alternativ konfigurationsfil (istället för '%s')"
 
 #: scripts/makepkg.sh.in:903
 msgid "  --holdver        Do not update VCS sources"
@@ -329,10 +323,9 @@ msgstr "--holdver Uppdatera inte VCS-källor"
 
 #: scripts/makepkg.sh.in:904
 msgid ""
-"  --key <key>      Specify a key to use for %s signing instead of the default"
-msgstr ""
-"--key <key> Ange en nyckel att användas för %s signering istället för den "
-"som är standard"
+"  --key <key>      Specify a key to use for %s signing instead of the "
+"default"
+msgstr "--key <key> Ange en nyckel att användas för %s signering istället för den som är standard"
 
 #: scripts/makepkg.sh.in:905
 msgid "  --noarchive      Do not create package archive"
@@ -379,9 +372,7 @@ msgstr "--skippgpcheck Verifiera inte källkodsfilerna med PGP-signaturer"
 msgid ""
 "  --verifysource   Download source files (if needed) and perform integrity "
 "checks"
-msgstr ""
-"--verifysource Ladda ner källkodsfiler (om det behövs) och göra "
-"integritetskontroller"
+msgstr "--verifysource Ladda ner källkodsfiler (om det behövs) och göra integritetskontroller"
 
 #: scripts/makepkg.sh.in:917
 msgid "These options can be passed to %s:"
@@ -399,15 +390,11 @@ msgstr "--needed Ominstallera inte mål som redan är fullt uppdaterade"
 #: scripts/makepkg.sh.in:921
 msgid ""
 "  --noconfirm      Do not ask for confirmation when resolving dependencies"
-msgstr ""
-"      --noconfirm      Fråga inte efter bekräftelse vid bestämmande av "
-"beroenden"
+msgstr "      --noconfirm      Fråga inte efter bekräftelse vid bestämmande av beroenden"
 
 #: scripts/makepkg.sh.in:922
 msgid "  --noprogressbar  Do not show a progress bar when downloading files"
-msgstr ""
-"      --noprogressbar  Visa inte en förloppsindikator vid nerladdning av "
-"filer"
+msgstr "      --noprogressbar  Visa inte en förloppsindikator vid nerladdning av filer"
 
 #: scripts/makepkg.sh.in:924
 msgid "If %s is not specified, %s will look for '%s'"
@@ -418,9 +405,7 @@ msgstr "Om %s inte är angiven, %s kommer söka efter '%s'"
 msgid ""
 "This is free software; see the source for copying conditions.\\nThere is NO "
 "WARRANTY, to the extent permitted by law.\\n"
-msgstr ""
-"Detta är fri mjukvara; Se källkoden för under vilka förhållanden kopiering "
-"kan göras.\\nDet finns INGEN GARANTI, i den utsträckning lagen tillåter.\\n"
+msgstr "Detta är fri mjukvara; Se källkoden för under vilka förhållanden kopiering kan göras.\\nDet finns INGEN GARANTI, i den utsträckning lagen tillåter.\\n"
 
 #: scripts/makepkg.sh.in:1042 scripts/repo-add.sh.in:602
 msgid "%s signal caught. Exiting..."
@@ -430,15 +415,11 @@ msgstr "%s-signal fångad. Avslutar..."
 msgid ""
 "Running %s as root is not allowed as it can cause permanent,\\ncatastrophic "
 "damage to your system."
-msgstr ""
-"Att köra %s som root är inte tillåtet eftersom det kan orsaka permanent,"
-"\\nkatastrofal skada på ditt system."
+msgstr "Att köra %s som root är inte tillåtet eftersom det kan orsaka permanent,\\nkatastrofal skada på ditt system."
 
 #: scripts/makepkg.sh.in:1118
 msgid "Do not use the %s option. This option is only for internal use by %s."
-msgstr ""
-"Använd inte alternativet %s. Detta alternativ är endast för intern "
-"användning av %s."
+msgstr "Använd inte alternativet %s. Detta alternativ är endast för intern användning av %s."
 
 #: scripts/makepkg.sh.in:1133
 msgid "%s does not exist."
@@ -470,8 +451,7 @@ msgstr "Skapar paket: %s"
 
 #: scripts/makepkg.sh.in:1280
 msgid "A source package has already been built. (use %s to overwrite)"
-msgstr ""
-"Ett källkodspaket har redan blivit byggt, (använd %s för att skriva över)"
+msgstr "Ett källkodspaket har redan blivit byggt, (använd %s för att skriva över)"
 
 #: scripts/makepkg.sh.in:1300
 msgid "Signing package..."
@@ -567,8 +547,7 @@ msgstr "Pacmans låsfil hittades. Kan inte köras medan pacman körs."
 
 #: scripts/pacman-db-upgrade.sh.in:152
 msgid "Pre-3.5 database format detected - upgrading..."
-msgstr ""
-"Databas med ett format tidigare än version 3.5 har upptäckts - uppgraderar..."
+msgstr "Databas med ett format tidigare än version 3.5 har upptäckts - uppgraderar..."
 
 #: scripts/pacman-db-upgrade.sh.in:159
 msgid "Done."
@@ -576,14 +555,11 @@ msgstr "Klar."
 
 #: scripts/pacman-db-upgrade.sh.in:163
 msgid "Pre-4.2 database format detected - upgrading..."
-msgstr ""
-"Databas med ett format tidigare än version 4.2 har upptäckts - uppgraderar..."
+msgstr "Databas med ett format tidigare än version 4.2 har upptäckts - uppgraderar..."
 
 #: scripts/pacman-db-upgrade.sh.in:185
 msgid "symlink '%s' points outside pacman root, manual repair required"
-msgstr ""
-"Den symboliska länken '%s' pekar utanför pacman:s root. Manuell reparation "
-"krävs"
+msgstr "Den symboliska länken '%s' pekar utanför pacman:s root. Manuell reparation krävs"
 
 #: scripts/pacman-key.sh.in:58
 msgid "Usage: %s [options] operation [targets]"
@@ -599,9 +575,7 @@ msgstr "Operationer:"
 
 #: scripts/pacman-key.sh.in:63
 msgid "  -a, --add                 Add the specified keys (empty for stdin)"
-msgstr ""
-"  -a, --add                 Lägg till de angivna nycklarna (tom utifall "
-"stdin)"
+msgstr "  -a, --add                 Lägg till de angivna nycklarna (tom utifall stdin)"
 
 #: scripts/pacman-key.sh.in:64
 msgid "  -d, --delete              Remove the specified keyids"
@@ -609,15 +583,12 @@ msgstr "  -d, --delete              Radera de angivna nyckelid:n"
 
 #: scripts/pacman-key.sh.in:65
 msgid "  -e, --export              Export the specified or all keyids"
-msgstr ""
-"  -e, --export              Exportera den angivna eller alla nyckelid:n"
+msgstr "  -e, --export              Exportera den angivna eller alla nyckelid:n"
 
 #: scripts/pacman-key.sh.in:66
 msgid ""
 "  -f, --finger              List fingerprint for specified or all keyids"
-msgstr ""
-"  -f, --finger              Visa fingeravtryck för den angivna eller "
-"alla\\n                            nyckelid:n"
+msgstr "  -f, --finger              Visa fingeravtryck för den angivna eller alla\\n                            nyckelid:n"
 
 #: scripts/pacman-key.sh.in:67
 msgid "  -l, --list-keys           List the specified or all keys"
@@ -634,16 +605,12 @@ msgstr "  -u, --updatedb            Uppdatera trustdb för pacman"
 #: scripts/pacman-key.sh.in:70
 msgid ""
 "  -v, --verify              Verify the file(s) specified by the signature(s)"
-msgstr ""
-"  -v, --verify              Verifiera filen(erna) som angivits "
-"av\\n                            signaturen(erna)"
+msgstr "  -v, --verify              Verifiera filen(erna) som angivits av\\n                            signaturen(erna)"
 
 #: scripts/pacman-key.sh.in:71
 msgid ""
 "  --edit-key                Present a menu for key management task on keyids"
-msgstr ""
-"  --edit-key                Visa en meny över nyckelhanteringsuppgifter "
-"av\\n                            nyckelid:n"
+msgstr "  --edit-key                Visa en meny över nyckelhanteringsuppgifter av\\n                            nyckelid:n"
 
 #: scripts/pacman-key.sh.in:72
 msgid "  --import                  Imports pubring.gpg from dir(s)"
@@ -653,15 +620,11 @@ msgstr "  --import                  Importerar pubring.gpg från katalog(er)"
 msgid ""
 "  --import-trustdb          Imports ownertrust values from trustdb.gpg in "
 "dir(s)"
-msgstr ""
-"  --import-trustdb          Importerar ägarbetrodda värden från trustdb.gpg "
-"i\\n                            katalog(er)"
+msgstr "  --import-trustdb          Importerar ägarbetrodda värden från trustdb.gpg i\\n                            katalog(er)"
 
 #: scripts/pacman-key.sh.in:74
 msgid "  --init                    Ensure the keyring is properly initialized"
-msgstr ""
-"  --init                    Se till att nyckelringen blir "
-"ordentligt\\n                            initialiserad"
+msgstr "  --init                    Se till att nyckelringen blir ordentligt\\n                            initialiserad"
 
 #: scripts/pacman-key.sh.in:75
 msgid "  --list-sigs               List keys and their signatures"
@@ -675,16 +638,12 @@ msgstr "  --lsign-key               Signera det angivna nyckelid:t lokalt"
 msgid ""
 "  --populate                Reload the default keys from the (given) "
 "keyrings\\n                            in '%s'"
-msgstr ""
-"  --populate                Ladda om standardnycklarna från (givna) "
-"nyckelringar\\n                            i '%s'"
+msgstr "  --populate                Ladda om standardnycklarna från (givna) nyckelringar\\n                            i '%s'"
 
 #: scripts/pacman-key.sh.in:79
 msgid ""
 "  --refresh-keys            Update specified or all keys from a keyserver"
-msgstr ""
-"  --refresh-keys            Uppdatera angiven eller alla nycklar från "
-"en\\n                            nyckelserver"
+msgstr "  --refresh-keys            Uppdatera angiven eller alla nycklar från en\\n                            nyckelserver"
 
 #: scripts/pacman-key.sh.in:80
 msgid "  --verbose                 Show extra information"
@@ -692,32 +651,25 @@ msgstr "  --verbose                 Visa extra information"
 
 #: scripts/pacman-key.sh.in:83
 msgid ""
-"  --config <file>           Use an alternate config file (instead "
-"of\\n                            '%s')"
-msgstr ""
-"  --config <file>           Använd en alternativ konfigurationsfil (istället "
-"för\\n                            '%s')"
+"  --config <file>           Use an alternate config file (instead of\\n"
+"                            '%s')"
+msgstr "  --config <file>           Använd en alternativ konfigurationsfil (istället för\\n                            '%s')"
 
 #: scripts/pacman-key.sh.in:85
 msgid ""
-"  --gpgdir <dir>            Set an alternate directory for GnuPG "
-"(instead\\n                            of '%s')"
-msgstr ""
-"  --gpgdir <dir>            Ange en alternativ katalog för GnuPG "
-"(istället\\n                            för '%s')"
+"  --gpgdir <dir>            Set an alternate directory for GnuPG (instead\\n"
+"                            of '%s')"
+msgstr "  --gpgdir <dir>            Ange en alternativ katalog för GnuPG (istället\\n                            för '%s')"
 
 #: scripts/pacman-key.sh.in:87
 msgid ""
 "  --populate-from <dir>     Set an alternate directory for --populate "
 "(instead\\n                            of '%s')"
-msgstr ""
-"  --populate-from <dir>     Ange en alternativ katalog för --populate "
-"(istället\\n                            för '%s')"
+msgstr "  --populate-from <dir>     Ange en alternativ katalog för --populate (istället\\n                            för '%s')"
 
 #: scripts/pacman-key.sh.in:89
 msgid "  --keyserver <server-url>  Specify a keyserver to use if necessary"
-msgstr ""
-"  --keyserver <server-url>  Ange en nyckelserver att användas om nödvändigt"
+msgstr "  --keyserver <server-url>  Ange en nyckelserver att användas om nödvändigt"
 
 #: scripts/pacman-key.sh.in:91
 msgid "  -h, --help                Show this help message and exit"
@@ -922,11 +874,9 @@ msgstr "Användning: repo-add [alternativ] <path-to-db> <package>  ...\\n"
 
 #: scripts/repo-add.sh.in:63
 msgid ""
-"repo-add will update a package database by reading a package file."
-"\\nMultiple packages to add can be specified on the command line.\\n"
-msgstr ""
-"repo-add kommer uppdatera en paketdatabas genom att läsa en paketfil."
-"\\nFlertal paket att läggas till kan anges via kommandoraden.\\n\\n"
+"repo-add will update a package database by reading a package "
+"file.\\nMultiple packages to add can be specified on the command line.\\n"
+msgstr "repo-add kommer uppdatera en paketdatabas genom att läsa en paketfil.\\nFlertal paket att läggas till kan anges via kommandoraden.\\n\\n"
 
 #: scripts/repo-add.sh.in:67 scripts/repo-add.sh.in:79
 msgid "Options:\\n"
@@ -934,24 +884,21 @@ msgstr "Alternativ:\\n"
 
 #: scripts/repo-add.sh.in:68
 msgid ""
-"  -n, --new         only add packages that are not already in the database\\n"
+"  -n, --new         only add packages that are not already in the "
+"database\\n"
 msgstr "-n, --new lägg bara till paket som inte redan finns i databasen\\n"
 
 #: scripts/repo-add.sh.in:69
 msgid ""
 "  -R, --remove      remove old package file from disk after updating "
 "database\\n"
-msgstr ""
-"  -R, --remove      ta bort gammal paketfil från disk när databasen har "
-"uppdaterats\\n"
+msgstr "  -R, --remove      ta bort gammal paketfil från disk när databasen har uppdaterats\\n"
 
 #: scripts/repo-add.sh.in:70
 msgid ""
-"  -p, --prevent-downgrade  do not add package to database if a newer version "
-"is already present\\n"
-msgstr ""
-"-p, --prevent-downgrade lägg inte till paket i databas om nyare version "
-"redan finns\\n"
+"  -p, --prevent-downgrade  do not add package to database if a newer version"
+" is already present\\n"
+msgstr "-p, --prevent-downgrade lägg inte till paket i databas om nyare version redan finns\\n"
 
 #: scripts/repo-add.sh.in:72
 msgid "Usage: repo-remove [options] <path-to-db> <packagename> ...\\n"
@@ -962,11 +909,7 @@ msgid ""
 "repo-remove will update a package database by removing the package "
 "name\\nspecified on the command line from the given repo database. "
 "Multiple\\npackages to remove can be specified on the command line.\\n"
-msgstr ""
-"repo-remove kommer att uppdatera en paketdatabas genom att ta bort "
-"paketnamnet\\nsom angetts via kommandotolken från den givna "
-"förrådsdatabasen. Flera\\npaket att tas bort kan anges via kommandotolken."
-"\\n\\n"
+msgstr "repo-remove kommer att uppdatera en paketdatabas genom att ta bort paketnamnet\\nsom angetts via kommandotolken från den givna förrådsdatabasen. Flera\\npaket att tas bort kan anges via kommandotolken.\\n\\n"
 
 #: scripts/repo-add.sh.in:81
 msgid "Please move along, there is nothing to see here.\\n"
@@ -995,15 +938,12 @@ msgstr "-v, --verify verifiera databasernas signatur före uppdatering\\n"
 #: scripts/repo-add.sh.in:89
 msgid ""
 "\\nSee %s(8) for more details and descriptions of the available options.\\n"
-msgstr ""
-"\\nSe %s(8) för fler detaljer och beskrivningar av de tillgängliga "
-"alternativen.\\n"
+msgstr "\\nSe %s(8) för fler detaljer och beskrivningar av de tillgängliga alternativen.\\n"
 
 #: scripts/repo-add.sh.in:93
 msgid ""
 "Example:  repo-add /path/to/repo.db.tar.gz pacman-3.0.0-1-i686.pkg.tar.gz\\n"
-msgstr ""
-"Exempel:  repo-add /path/to/repo.db.tar.gz pacman-3.0.0-1-i686.pkg.tar.gz\\n"
+msgstr "Exempel:  repo-add /path/to/repo.db.tar.gz pacman-3.0.0-1-i686.pkg.tar.gz\\n"
 
 #: scripts/repo-add.sh.in:95
 msgid "Example:  repo-remove /path/to/repo.db.tar.gz kernel26\\n"
@@ -1392,8 +1332,7 @@ msgstr "%småste vara i form av ett 'heltal.[heltal]', inte %s."
 #: scripts/libmakepkg/lint_pkgbuild/pkgver.sh.in:41
 msgid ""
 "%s is not allowed to contain colons, forward slashes, hyphens or whitespace."
-msgstr ""
-"%s får inte innehålla kolon, snedstreck, bindestreck eller blanktecken."
+msgstr "%s får inte innehålla kolon, snedstreck, bindestreck eller blanktecken."
 
 #: scripts/libmakepkg/lint_pkgbuild/provides.sh.in:46
 msgid "%s array cannot contain comparison (< or >) operators."
@@ -1436,26 +1375,28 @@ msgid "Failure while pulling %s"
 msgstr "Misslyckande vid nerdragning av %s"
 
 #: scripts/libmakepkg/source/bzr.sh.in:85
-#: scripts/libmakepkg/source/git.sh.in:124
-#: scripts/libmakepkg/source/hg.sh.in:93 scripts/libmakepkg/source/svn.sh.in:62
+#: scripts/libmakepkg/source/git.sh.in:121
+#: scripts/libmakepkg/source/hg.sh.in:93
+#: scripts/libmakepkg/source/svn.sh.in:62
 msgid "Unrecognized reference: %s"
 msgstr "Okänd referens: %s"
 
 #: scripts/libmakepkg/source/bzr.sh.in:94
-#: scripts/libmakepkg/source/git.sh.in:93 scripts/libmakepkg/source/hg.sh.in:79
+#: scripts/libmakepkg/source/git.sh.in:90
+#: scripts/libmakepkg/source/hg.sh.in:79
 #: scripts/libmakepkg/source/svn.sh.in:95
 msgid "Creating working copy of %s %s repo..."
 msgstr "Skapar arbetskopia av %s %s repo..."
 
 #: scripts/libmakepkg/source/bzr.sh.in:100
-#: scripts/libmakepkg/source/git.sh.in:101
+#: scripts/libmakepkg/source/git.sh.in:98
 #: scripts/libmakepkg/source/hg.sh.in:102
 msgid "Failure while updating working copy of %s %s repo"
 msgstr "Misslyckande under uppdatering av arbetskopia av %s %s repo"
 
 #: scripts/libmakepkg/source/bzr.sh.in:105
-#: scripts/libmakepkg/source/git.sh.in:107
-#: scripts/libmakepkg/source/git.sh.in:141
+#: scripts/libmakepkg/source/git.sh.in:104
+#: scripts/libmakepkg/source/git.sh.in:138
 #: scripts/libmakepkg/source/hg.sh.in:107
 msgid "Failure while creating working copy of %s %s repo"
 msgstr "Misslyckande vid skapandet av arbetskopia för %s %s repo"
@@ -1485,31 +1426,35 @@ msgstr "Misslyckades att extrahera %s"
 msgid "NOT FOUND"
 msgstr "HITTADES INTE"
 
-#: scripts/libmakepkg/source/git.sh.in:51 scripts/libmakepkg/source/hg.sh.in:49
+#: scripts/libmakepkg/source/git.sh.in:51
+#: scripts/libmakepkg/source/hg.sh.in:49
 #: scripts/libmakepkg/source/svn.sh.in:69
 msgid "Cloning %s %s repo..."
 msgstr "Klonar %s %s repo..."
 
-#: scripts/libmakepkg/source/git.sh.in:53 scripts/libmakepkg/source/hg.sh.in:51
+#: scripts/libmakepkg/source/git.sh.in:53
+#: scripts/libmakepkg/source/hg.sh.in:51
 #: scripts/libmakepkg/source/svn.sh.in:72
 msgid "Failure while downloading %s %s repo"
 msgstr "Misslyckande vid nerladdning av %s %s repo"
 
-#: scripts/libmakepkg/source/git.sh.in:65
+#: scripts/libmakepkg/source/git.sh.in:62
 msgid "%s is not a clone of %s"
 msgstr "%s är inte en klon av %s"
 
-#: scripts/libmakepkg/source/git.sh.in:69 scripts/libmakepkg/source/hg.sh.in:56
+#: scripts/libmakepkg/source/git.sh.in:66
+#: scripts/libmakepkg/source/hg.sh.in:56
 #: scripts/libmakepkg/source/svn.sh.in:77
 msgid "Updating %s %s repo..."
 msgstr "Uppdaterar %s %s repo..."
 
-#: scripts/libmakepkg/source/git.sh.in:72 scripts/libmakepkg/source/hg.sh.in:60
+#: scripts/libmakepkg/source/git.sh.in:69
+#: scripts/libmakepkg/source/hg.sh.in:60
 #: scripts/libmakepkg/source/svn.sh.in:81
 msgid "Failure while updating %s %s repo"
 msgstr "Misslyckande vid uppdatering av %s %s repo"
 
-#: scripts/libmakepkg/source/git.sh.in:133
+#: scripts/libmakepkg/source/git.sh.in:130
 msgid "Failure while checking out version %s, the git tag has been forged"
 msgstr "Fel vid utcheckning av version %s, git-taggen har förfalskats"
 
@@ -1545,13 +1490,13 @@ msgstr "Tar bort statiska biblioteksfiler..."
 msgid "Stripping unneeded symbols from binaries and libraries..."
 msgstr "Tar bort onödiga symboler från binärer och bibliotek..."
 
-#: scripts/libmakepkg/tidy/strip.sh.in:195
+#: scripts/libmakepkg/tidy/strip.sh.in:190
 msgid "Copying source files needed for debug symbols..."
 msgstr "Kopierar källfiler som behövs för felsökningssymboler..."
 
 #: scripts/libmakepkg/tidy/zipman.sh.in:35
 msgid "Compressing man and info pages..."
-msgstr "Komprimerar man och info sidor..."
+msgstr "Komprimerar man- och info-sidor..."
 
 #: scripts/libmakepkg/util/compress.sh.in:38
 msgid "'%s' is not a valid archive extension."

@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR "Pacman Development Team <pacman-dev@archlinux.org>"
 # This file is distributed under the same license as the libalpm package.
-#
+# 
 # Translators:
 # 202609b54ed34ff097613de9ccdb5e5a_959331d <9d860af7345e5089300e50121cee92df_6113>, 2011
 # Arthur Țițeică <arthur.titeica@gmail.com>, 2013
@@ -22,17 +22,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arch Linux Pacman package manager\n"
 "Report-Msgid-Bugs-To: https://gitlab.archlinux.org/pacman/pacman/-/issues\n"
-"POT-Creation-Date: 2024-07-14 19:10+1000\n"
+"POT-Creation-Date: 2024-07-02 10:33+1000\n"
 "PO-Revision-Date: 2010-11-29 23:17+0000\n"
 "Last-Translator: Arthur Țițeică <arthur.titeica@gmail.com>, 2013-2015\n"
-"Language-Team: Romanian (http://app.transifex.com/toofishes/archlinux-pacman/"
-"language/ro/)\n"
-"Language: ro\n"
+"Language-Team: Romanian (http://app.transifex.com/toofishes/archlinux-pacman/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
-"2:1));\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: lib/libalpm/add.c:90 lib/libalpm/sync.c:279
 #, c-format
@@ -72,9 +70,7 @@ msgstr "nu s-a putut redenumi %s în %s (%s)\n"
 #: lib/libalpm/add.c:210
 #, c-format
 msgid "file not found in file list for package %s. skipping extraction of %s\n"
-msgstr ""
-"fișierul nu a fost găsit în lista de fișiere pentru pachetul %s. Se omite "
-"extragerea lui %s\n"
+msgstr "fișierul nu a fost găsit în lista de fișiere pentru pachetul %s. Se omite extragerea lui %s\n"
 
 #: lib/libalpm/add.c:219
 #, c-format
@@ -86,18 +82,14 @@ msgstr "nu se poate extrage %s%s: cale prea lungă"
 msgid ""
 "directory permissions differ on %s\n"
 "filesystem: %o  package: %o\n"
-msgstr ""
-"permisiunile directorului diferă la %s\n"
-"sistem fișiere: %o  pachet: %o\n"
+msgstr "permisiunile directorului diferă la %s\nsistem fișiere: %o  pachet: %o\n"
 
 #: lib/libalpm/add.c:276
 #, c-format
 msgid ""
 "directory ownership differs on %s\n"
 "filesystem: %u:%u  package: %u:%u\n"
-msgstr ""
-"proprietarul directorului diferă pentru %s\n"
-"sistem fișiere: %u:%u pachet: %u:%u\n"
+msgstr "proprietarul directorului diferă pentru %s\nsistem fișiere: %u:%u pachet: %u:%u\n"
 
 #: lib/libalpm/add.c:292
 #, c-format
@@ -191,14 +183,12 @@ msgstr "nu s-a putut deschide fișierul %s: %s\n"
 #: lib/libalpm/be_local.c:759 lib/libalpm/be_sync.c:612
 #, c-format
 msgid "%s database is inconsistent: name mismatch on package %s\n"
-msgstr ""
-"baza de date %s este inconsecventă: nepotrivire de nume la pachetul %s\n"
+msgstr "baza de date %s este inconsecventă: nepotrivire de nume la pachetul %s\n"
 
 #: lib/libalpm/be_local.c:765 lib/libalpm/be_sync.c:618
 #, c-format
 msgid "%s database is inconsistent: version mismatch on package %s\n"
-msgstr ""
-"baza de date %s este inconsecventă: nepotrivire de versiune la pachetul %s\n"
+msgstr "baza de date %s este inconsecventă: nepotrivire de versiune la pachetul %s\n"
 
 #: lib/libalpm/be_local.c:806
 #, c-format
@@ -269,8 +259,7 @@ msgstr "se elimină fișierul nevalid: %s\n"
 #: lib/libalpm/be_sync.c:471
 #, c-format
 msgid "could not parse package description file '%s' from db '%s'\n"
-msgstr ""
-"nu s-a putut analiza fișierul '%s' de descriere a pachetului din db '%s'\n"
+msgstr "nu s-a putut analiza fișierul '%s' de descriere a pachetului din db '%s'\n"
 
 #: lib/libalpm/be_sync.c:486
 #, c-format
@@ -280,16 +269,12 @@ msgstr "nu s-a putut citi baza de date '%s' (%s)\n"
 #: lib/libalpm/be_sync.c:519 lib/libalpm/be_sync.c:524
 #, c-format
 msgid "%s database is inconsistent: filename of package %s is illegal\n"
-msgstr ""
-"baza de date %s este inconsistentă: numele de fișier al pachetului %s este "
-"nepermis\n"
+msgstr "baza de date %s este inconsistentă: numele de fișier al pachetului %s este nepermis\n"
 
 #: lib/libalpm/be_sync.c:529
 #, c-format
 msgid "%s database is inconsistent: filename of package %s is too long\n"
-msgstr ""
-"baza de date %s este inconsistentă: numele de fișier al pachetului %s este "
-"prea lung\n"
+msgstr "baza de date %s este inconsistentă: numele de fișier al pachetului %s este prea lung\n"
 
 #: lib/libalpm/be_sync.c:594
 #, c-format
@@ -334,8 +319,7 @@ msgstr "nu se poate rezolva \"%s\", o dependență a \"%s\"\n"
 #: lib/libalpm/diskspace.c:78
 #, c-format
 msgid "could not get filesystem information for %s: %s\n"
-msgstr ""
-"nu s-au putut obține informații despre sistemul de fișiere pentru %s: %s\n"
+msgstr "nu s-au putut obține informații despre sistemul de fișiere pentru %s: %s\n"
 
 #: lib/libalpm/diskspace.c:108
 #, c-format
@@ -365,8 +349,7 @@ msgstr "Partiția %s prea plină: %jd blocuri necesare, %ju blocuri libere\n"
 #: lib/libalpm/diskspace.c:391 lib/libalpm/diskspace.c:445
 #, c-format
 msgid "could not determine filesystem mount points\n"
-msgstr ""
-"nu s-au putut determina locurile de montare ale sistemului de fișiere\n"
+msgstr "nu s-au putut determina locurile de montare ale sistemului de fișiere\n"
 
 #: lib/libalpm/diskspace.c:397
 #, c-format
@@ -392,8 +375,7 @@ msgstr "eșec la crearea fișierului temporar pentru descărcare\n"
 #, c-format
 msgid ""
 "too many errors from %s, skipping for the remainder of this transaction\n"
-msgstr ""
-"prea multe erori de la %s, trec peste pentru restul acestei tranzacții\n"
+msgstr "prea multe erori de la %s, trec peste pentru restul acestei tranzacții\n"
 
 #: lib/libalpm/dload.c:215
 #, c-format
@@ -413,9 +395,7 @@ msgstr "eșec la obținerea fișierului '%s' din %s : %s\n"
 #: lib/libalpm/dload.c:562
 #, c-format
 msgid "failed retrieving file '%s' from %s : expected download size exceeded\n"
-msgstr ""
-"eșec la obținerea fișierului '%s' din %s : dimensiunea de descărcare "
-"așteptată a fost depășită\n"
+msgstr "eșec la obținerea fișierului '%s' din %s : dimensiunea de descărcare așteptată a fost depășită\n"
 
 #: lib/libalpm/dload.c:685
 #, c-format
@@ -427,37 +407,37 @@ msgstr "%s pare a fi trunchiat: %jd/%jd octeți\n"
 msgid "url '%s' is invalid\n"
 msgstr "Adresa url '%s' este nevalidă\n"
 
-#: lib/libalpm/dload.c:864
+#: lib/libalpm/dload.c:861
 #, c-format
 msgid "failed to setup a download payload for %s\n"
 msgstr "eșec la configurarea încărcăturii pentru descărcarea %s\n"
 
-#: lib/libalpm/dload.c:876
+#: lib/libalpm/dload.c:873
 #, c-format
 msgid "curl returned error %d from transfer\n"
 msgstr "curl a returnat eroarea %d de la transfer\n"
 
-#: lib/libalpm/dload.c:900
+#: lib/libalpm/dload.c:897
 #, c-format
 msgid "curl transfer error: %d\n"
 msgstr "eroare de transfer curl: %d\n"
 
-#: lib/libalpm/dload.c:963
+#: lib/libalpm/dload.c:959
 #, c-format
 msgid "could not chdir to download directory %s\n"
 msgstr "nu s-a putut schimba directorul în cel de descărcare %s\n"
 
-#: lib/libalpm/dload.c:968
+#: lib/libalpm/dload.c:964
 #, c-format
 msgid "switching to sandbox user '%s' failed!\n"
 msgstr ""
 
-#: lib/libalpm/dload.c:1361 lib/libalpm/sync.c:861
+#: lib/libalpm/dload.c:1357 lib/libalpm/sync.c:861
 #, c-format
 msgid "failed to retrieve some files\n"
 msgstr "eșec la obținerea unor fișiere\n"
 
-#: lib/libalpm/dload.c:1384
+#: lib/libalpm/dload.c:1380
 #, c-format
 msgid "download completed successfully but no file in the cache\n"
 msgstr "descărcare finalizată cu succes dar fișierul nu există în cache\n"
@@ -862,8 +842,7 @@ msgstr ""
 
 #: lib/libalpm/package.c:895
 #, c-format
-msgid ""
-"invalid metadata for package %s-%s (package name and version too long)\n"
+msgid "invalid metadata for package %s-%s (package name and version too long)\n"
 msgstr ""
 
 #: lib/libalpm/remove.c:111
@@ -884,9 +863,7 @@ msgstr "nu se poate elimina fișierul '%s': %s\n"
 #: lib/libalpm/remove.c:403 lib/libalpm/remove.c:412
 #, c-format
 msgid "could not backup %s due to PATH_MAX overflow\n"
-msgstr ""
-"nu s-a putut crea o copie de rezervă pentru %s din cauza unei revărsări "
-"PATH_MAX\n"
+msgstr "nu s-a putut crea o copie de rezervă pentru %s din cauza unei revărsări PATH_MAX\n"
 
 #: lib/libalpm/remove.c:570
 #, c-format
@@ -1143,6 +1120,4 @@ msgstr "nu există cache %s, se crează...\n"
 #: lib/libalpm/util.c:947
 #, c-format
 msgid "couldn't find or create package cache, using %s instead\n"
-msgstr ""
-"nu s-a putut găsi sau crea cache-ul pentru pachet; se folosește %s în "
-"schimb.\n"
+msgstr "nu s-a putut găsi sau crea cache-ul pentru pachet; se folosește %s în schimb.\n"

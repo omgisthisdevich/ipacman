@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR "Pacman Development Team <pacman-dev@lists.archlinux.org>"
 # This file is distributed under the same license as the pacman-scripts package.
-#
+# 
 # Translators:
 # Galin Iskrenov <loot270@abv.bg>, 2016-2019,2021,2024
 # Ivailo Monev <xakepa10@gmail.com>, 2014-2016
@@ -9,15 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arch Linux Pacman package manager\n"
 "Report-Msgid-Bugs-To: https://gitlab.archlinux.org/pacman/pacman/-/issues\n"
-"POT-Creation-Date: 2024-07-14 19:10+1000\n"
+"POT-Creation-Date: 2024-07-02 10:33+1000\n"
 "PO-Revision-Date: 2011-08-08 22:35+0000\n"
 "Last-Translator: Galin Iskrenov <loot270@abv.bg>, 2016-2019,2021,2024\n"
-"Language-Team: Bulgarian (http://app.transifex.com/toofishes/archlinux-"
-"pacman/language/bg/)\n"
-"Language: bg\n"
+"Language-Team: Bulgarian (http://app.transifex.com/toofishes/archlinux-pacman/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: scripts/makepkg.sh.in:141
@@ -64,12 +63,12 @@ msgstr "Неможе да се намери източен файл %s."
 #: scripts/libmakepkg/source/file.sh.in:75
 #: scripts/libmakepkg/source/file.sh.in:145
 #: scripts/libmakepkg/source/git.sh.in:54
-#: scripts/libmakepkg/source/git.sh.in:66
-#: scripts/libmakepkg/source/git.sh.in:102
-#: scripts/libmakepkg/source/git.sh.in:108
-#: scripts/libmakepkg/source/git.sh.in:125
-#: scripts/libmakepkg/source/git.sh.in:134
-#: scripts/libmakepkg/source/git.sh.in:142
+#: scripts/libmakepkg/source/git.sh.in:63
+#: scripts/libmakepkg/source/git.sh.in:99
+#: scripts/libmakepkg/source/git.sh.in:105
+#: scripts/libmakepkg/source/git.sh.in:122
+#: scripts/libmakepkg/source/git.sh.in:131
+#: scripts/libmakepkg/source/git.sh.in:139
 #: scripts/libmakepkg/source/hg.sh.in:52 scripts/libmakepkg/source/hg.sh.in:94
 #: scripts/libmakepkg/source/hg.sh.in:103
 #: scripts/libmakepkg/source/hg.sh.in:108
@@ -196,7 +195,8 @@ msgid "The package group has already been built. (use %s to overwrite)"
 msgstr "Пакетна група вече е построена. (изплозвай %s за презапис)"
 
 #: scripts/makepkg.sh.in:822
-msgid "Part of the package group has already been built. (use %s to overwrite)"
+msgid ""
+"Part of the package group has already been built. (use %s to overwrite)"
 msgstr "Част от пакетна група вече е построена. (изплозвай %s за презапис)"
 
 #: scripts/makepkg.sh.in:876
@@ -228,7 +228,8 @@ msgid "  -d, --nodeps     Skip all dependency checks"
 msgstr "-d, --nodeps Пропусни всички проверки на зависимост"
 
 #: scripts/makepkg.sh.in:885
-msgid "  -D, --dir <dir>  Change to directory <dir> before processing PKGBUILD"
+msgid ""
+"  -D, --dir <dir>  Change to directory <dir> before processing PKGBUILD"
 msgstr ""
 
 #: scripts/makepkg.sh.in:886
@@ -270,13 +271,12 @@ msgstr "-p <file> Използвай друг скрипт за построяв
 #: scripts/makepkg.sh.in:895
 msgid ""
 "  -r, --rmdeps     Remove installed dependencies after a successful build"
-msgstr ""
-"-r, --rmdeps Премахване на инсталираните зависимости след успешно построяване"
+msgstr "-r, --rmdeps Премахване на инсталираните зависимости след успешно построяване"
 
 #: scripts/makepkg.sh.in:896
-msgid "  -R, --repackage  Repackage contents of the package without rebuilding"
-msgstr ""
-"-R, --repackage Препакетиране на държанието на пакета без ново построяване"
+msgid ""
+"  -R, --repackage  Repackage contents of the package without rebuilding"
+msgstr "-R, --repackage Препакетиране на държанието на пакета без ново построяване"
 
 #: scripts/makepkg.sh.in:897
 msgid "  -s, --syncdeps   Install missing dependencies with %s"
@@ -303,8 +303,7 @@ msgstr "--check Изпълни %s функцията в %s"
 
 #: scripts/makepkg.sh.in:902
 msgid "  --config <file>  Use an alternate config file (instead of '%s')"
-msgstr ""
-"--config <файл> Използвай алтернативен конфигурационен файл (вместо '%s')"
+msgstr "--config <файл> Използвай алтернативен конфигурационен файл (вместо '%s')"
 
 #: scripts/makepkg.sh.in:903
 msgid "  --holdver        Do not update VCS sources"
@@ -312,9 +311,9 @@ msgstr "--holdver Не обновявай VCS източници"
 
 #: scripts/makepkg.sh.in:904
 msgid ""
-"  --key <key>      Specify a key to use for %s signing instead of the default"
-msgstr ""
-"--key <key> Указване на ключ за подписването на %s вместо подразбиращият се"
+"  --key <key>      Specify a key to use for %s signing instead of the "
+"default"
+msgstr "--key <key> Указване на ключ за подписването на %s вместо подразбиращият се"
 
 #: scripts/makepkg.sh.in:905
 msgid "  --noarchive      Do not create package archive"
@@ -361,8 +360,7 @@ msgstr "--skippgpcheck Не проверявай източните файлов
 msgid ""
 "  --verifysource   Download source files (if needed) and perform integrity "
 "checks"
-msgstr ""
-"--verifysource Сваляне на соср файлове (при нужда) и проверка за цялостност"
+msgstr "--verifysource Сваляне на соср файлове (при нужда) и проверка за цялостност"
 
 #: scripts/makepkg.sh.in:917
 msgid "These options can be passed to %s:"
@@ -395,9 +393,7 @@ msgstr "Ако %s не е зададен, %s ще търси за '%s'"
 msgid ""
 "This is free software; see the source for copying conditions.\\nThere is NO "
 "WARRANTY, to the extent permitted by law.\\n"
-msgstr ""
-"Това е безплатен софтуер; вижте кода за условия за копиране. \\nНЯМА "
-"ГАРАНЦИЯ, доколкото е разрешено от закона. \\n"
+msgstr "Това е безплатен софтуер; вижте кода за условия за копиране. \\nНЯМА ГАРАНЦИЯ, доколкото е разрешено от закона. \\n"
 
 #: scripts/makepkg.sh.in:1042 scripts/repo-add.sh.in:602
 msgid "%s signal caught. Exiting..."
@@ -407,9 +403,7 @@ msgstr "%s сигнал хванат. Излизане..."
 msgid ""
 "Running %s as root is not allowed as it can cause permanent,\\ncatastrophic "
 "damage to your system."
-msgstr ""
-"Пускането на %s като root не е позволено и може да причини постоянна,"
-"\\nфатална повреда на вашата система."
+msgstr "Пускането на %s като root не е позволено и може да причини постоянна,\\nфатална повреда на вашата система."
 
 #: scripts/makepkg.sh.in:1118
 msgid "Do not use the %s option. This option is only for internal use by %s."
@@ -537,8 +531,7 @@ msgstr "Трябват в нужните права за надграждане 
 
 #: scripts/pacman-db-upgrade.sh.in:140
 msgid "Pacman lock file was found. Cannot run while pacman is running."
-msgstr ""
-"Открит е заключващ файл на Pacman. Не може да се пусне докато той работи."
+msgstr "Открит е заключващ файл на Pacman. Не може да се пусне докато той работи."
 
 #: scripts/pacman-db-upgrade.sh.in:152
 msgid "Pre-3.5 database format detected - upgrading..."
@@ -633,9 +626,7 @@ msgstr "--lsign-key Локално подписан с указан keyid"
 msgid ""
 "  --populate                Reload the default keys from the (given) "
 "keyrings\\n                            in '%s'"
-msgstr ""
-"--populate Презареждане на подразбиращи се ключове от (указан) "
-"ключодържателя\\n в '%s'"
+msgstr "--populate Презареждане на подразбиращи се ключове от (указан) ключодържателя\\n в '%s'"
 
 #: scripts/pacman-key.sh.in:79
 msgid ""
@@ -648,31 +639,25 @@ msgstr "  --verbose                 Показване на допълнител
 
 #: scripts/pacman-key.sh.in:83
 msgid ""
-"  --config <file>           Use an alternate config file (instead "
-"of\\n                            '%s')"
-msgstr ""
-"--config <файл> Използвай алтернативен конфигурационен файл (вместо\\n '%s')"
+"  --config <file>           Use an alternate config file (instead of\\n"
+"                            '%s')"
+msgstr "--config <файл> Използвай алтернативен конфигурационен файл (вместо\\n '%s')"
 
 #: scripts/pacman-key.sh.in:85
 msgid ""
-"  --gpgdir <dir>            Set an alternate directory for GnuPG "
-"(instead\\n                            of '%s')"
-msgstr ""
-"--gpgdir <dir> Задаване на алтернативна директория за GnuPG (вместо\\n на "
-"'%s')"
+"  --gpgdir <dir>            Set an alternate directory for GnuPG (instead\\n"
+"                            of '%s')"
+msgstr "--gpgdir <dir> Задаване на алтернативна директория за GnuPG (вместо\\n на '%s')"
 
 #: scripts/pacman-key.sh.in:87
 msgid ""
 "  --populate-from <dir>     Set an alternate directory for --populate "
 "(instead\\n                            of '%s')"
-msgstr ""
-"  --populate-from <dir>     Задайте алтернативна директория от --populate "
-"(instead\\n of '%s')"
+msgstr "  --populate-from <dir>     Задайте алтернативна директория от --populate (instead\\n of '%s')"
 
 #: scripts/pacman-key.sh.in:89
 msgid "  --keyserver <server-url>  Specify a keyserver to use if necessary"
-msgstr ""
-"--keyserver <server-url> Указване на keyserver за иползване при необходимост"
+msgstr "--keyserver <server-url> Указване на keyserver за иползване при необходимост"
 
 #: scripts/pacman-key.sh.in:91
 msgid "  -h, --help                Show this help message and exit"
@@ -692,8 +677,7 @@ msgstr "Името на ключа е двусмислено:"
 
 #: scripts/pacman-key.sh.in:150
 msgid "Generating pacman master key. This may take some time."
-msgstr ""
-"Генериране на главен ключ на Pacman. Това може да отнеме известно време."
+msgstr "Генериране на главен ключ на Pacman. Това може да отнеме известно време."
 
 #: scripts/pacman-key.sh.in:187
 msgid "The key identified by %s could not be found locally."
@@ -878,11 +862,9 @@ msgstr "Използване:  repo-add [опции] <path-to-db><package> ... \
 
 #: scripts/repo-add.sh.in:63
 msgid ""
-"repo-add will update a package database by reading a package file."
-"\\nMultiple packages to add can be specified on the command line.\\n"
-msgstr ""
-"repo-add ще обнови пакетна датабасе като чете пакетен файл.\\nНяколко "
-"пакета, които да бъдат добавени, могат да бъдат зададени на командния ред.\\n"
+"repo-add will update a package database by reading a package "
+"file.\\nMultiple packages to add can be specified on the command line.\\n"
+msgstr "repo-add ще обнови пакетна датабасе като чете пакетен файл.\\nНяколко пакета, които да бъдат добавени, могат да бъдат зададени на командния ред.\\n"
 
 #: scripts/repo-add.sh.in:67 scripts/repo-add.sh.in:79
 msgid "Options:\\n"
@@ -890,23 +872,21 @@ msgstr "Опции:\\n"
 
 #: scripts/repo-add.sh.in:68
 msgid ""
-"  -n, --new         only add packages that are not already in the database\\n"
+"  -n, --new         only add packages that are not already in the "
+"database\\n"
 msgstr "-n, --new само добавя пакети липсващи в базата\\n"
 
 #: scripts/repo-add.sh.in:69
 msgid ""
 "  -R, --remove      remove old package file from disk after updating "
 "database\\n"
-msgstr ""
-"-R, --remove премахва стария пакет от диска след обновяване на базата\\n"
+msgstr "-R, --remove премахва стария пакет от диска след обновяване на базата\\n"
 
 #: scripts/repo-add.sh.in:70
 msgid ""
-"  -p, --prevent-downgrade  do not add package to database if a newer version "
-"is already present\\n"
-msgstr ""
-"-p, --prevent-downgrade не добавяйте пакета към базата от данни, ако вече "
-"съществува по-нова версия \\n"
+"  -p, --prevent-downgrade  do not add package to database if a newer version"
+" is already present\\n"
+msgstr "-p, --prevent-downgrade не добавяйте пакета към базата от данни, ако вече съществува по-нова версия \\n"
 
 #: scripts/repo-add.sh.in:72
 msgid "Usage: repo-remove [options] <path-to-db> <packagename> ...\\n"
@@ -917,10 +897,7 @@ msgid ""
 "repo-remove will update a package database by removing the package "
 "name\\nspecified on the command line from the given repo database. "
 "Multiple\\npackages to remove can be specified on the command line.\\n"
-msgstr ""
-"repo-remove ще обнови пакетната база чрез премахване на пакет\\nуказан в "
-"командния ред за дадена база нахранилище. Множество\\nпакети за премахване "
-"може да се укажат в командния ред.\\n"
+msgstr "repo-remove ще обнови пакетната база чрез премахване на пакет\\nуказан в командния ред за дадена база нахранилище. Множество\\nпакети за премахване може да се укажат в командния ред.\\n"
 
 #: scripts/repo-add.sh.in:81
 msgid "Please move along, there is nothing to see here.\\n"
@@ -954,8 +931,7 @@ msgstr "\\nВиж %s(8) за повече детайли и описания з�
 #: scripts/repo-add.sh.in:93
 msgid ""
 "Example:  repo-add /path/to/repo.db.tar.gz pacman-3.0.0-1-i686.pkg.tar.gz\\n"
-msgstr ""
-"Пример: repo-add /path/to/repo.db.tar.gz pacman-3.0.0-1-i686.pkg.tar.gz\\n"
+msgstr "Пример: repo-add /path/to/repo.db.tar.gz pacman-3.0.0-1-i686.pkg.tar.gz\\n"
 
 #: scripts/repo-add.sh.in:95
 msgid "Example:  repo-remove /path/to/repo.db.tar.gz kernel26\\n"
@@ -1254,8 +1230,7 @@ msgstr "%s не трябва да е масив"
 
 #: scripts/libmakepkg/lint_config/variable.sh.in:66
 msgid "PACKAGER should have the format 'Example Name <email@address.invalid>'"
-msgstr ""
-"Опаковчикът трябва да е във формат 'Примерно име <email@address.invalid> '"
+msgstr "Опаковчикът трябва да е във формат 'Примерно име <email@address.invalid> '"
 
 #: scripts/libmakepkg/lint_package.sh.in:41
 msgid "Checking for packaging issues..."
@@ -1345,9 +1320,7 @@ msgstr "%s трябва да е с формат 'integer[.integer]', не %s."
 #: scripts/libmakepkg/lint_pkgbuild/pkgver.sh.in:41
 msgid ""
 "%s is not allowed to contain colons, forward slashes, hyphens or whitespace."
-msgstr ""
-"не е позволено %s да съдържа квадратни скоби, плъзгачи, тирета или междинен "
-"интервал."
+msgstr "не е позволено %s да съдържа квадратни скоби, плъзгачи, тирета или междинен интервал."
 
 #: scripts/libmakepkg/lint_pkgbuild/provides.sh.in:46
 msgid "%s array cannot contain comparison (< or >) operators."
@@ -1390,26 +1363,28 @@ msgid "Failure while pulling %s"
 msgstr "Неуспех при теглене %s"
 
 #: scripts/libmakepkg/source/bzr.sh.in:85
-#: scripts/libmakepkg/source/git.sh.in:124
-#: scripts/libmakepkg/source/hg.sh.in:93 scripts/libmakepkg/source/svn.sh.in:62
+#: scripts/libmakepkg/source/git.sh.in:121
+#: scripts/libmakepkg/source/hg.sh.in:93
+#: scripts/libmakepkg/source/svn.sh.in:62
 msgid "Unrecognized reference: %s"
 msgstr "Непозната справка: %s"
 
 #: scripts/libmakepkg/source/bzr.sh.in:94
-#: scripts/libmakepkg/source/git.sh.in:93 scripts/libmakepkg/source/hg.sh.in:79
+#: scripts/libmakepkg/source/git.sh.in:90
+#: scripts/libmakepkg/source/hg.sh.in:79
 #: scripts/libmakepkg/source/svn.sh.in:95
 msgid "Creating working copy of %s %s repo..."
 msgstr "Създаване работно копие на %s %s хранилище..."
 
 #: scripts/libmakepkg/source/bzr.sh.in:100
-#: scripts/libmakepkg/source/git.sh.in:101
+#: scripts/libmakepkg/source/git.sh.in:98
 #: scripts/libmakepkg/source/hg.sh.in:102
 msgid "Failure while updating working copy of %s %s repo"
 msgstr "Неуспех при обновление работното копие на %s %s хранилище"
 
 #: scripts/libmakepkg/source/bzr.sh.in:105
-#: scripts/libmakepkg/source/git.sh.in:107
-#: scripts/libmakepkg/source/git.sh.in:141
+#: scripts/libmakepkg/source/git.sh.in:104
+#: scripts/libmakepkg/source/git.sh.in:138
 #: scripts/libmakepkg/source/hg.sh.in:107
 msgid "Failure while creating working copy of %s %s repo"
 msgstr "Неуспех при създаване работно копие на %s %s хранилище"
@@ -1439,31 +1414,35 @@ msgstr "Неуспех при извличане на %s"
 msgid "NOT FOUND"
 msgstr "НЕ Е ОТКРИТ"
 
-#: scripts/libmakepkg/source/git.sh.in:51 scripts/libmakepkg/source/hg.sh.in:49
+#: scripts/libmakepkg/source/git.sh.in:51
+#: scripts/libmakepkg/source/hg.sh.in:49
 #: scripts/libmakepkg/source/svn.sh.in:69
 msgid "Cloning %s %s repo..."
 msgstr "Клониране %s %s хранилище..."
 
-#: scripts/libmakepkg/source/git.sh.in:53 scripts/libmakepkg/source/hg.sh.in:51
+#: scripts/libmakepkg/source/git.sh.in:53
+#: scripts/libmakepkg/source/hg.sh.in:51
 #: scripts/libmakepkg/source/svn.sh.in:72
 msgid "Failure while downloading %s %s repo"
 msgstr "Неуспех при сваляне %s %s repo"
 
-#: scripts/libmakepkg/source/git.sh.in:65
+#: scripts/libmakepkg/source/git.sh.in:62
 msgid "%s is not a clone of %s"
 msgstr "%s не е клонинг на  %s"
 
-#: scripts/libmakepkg/source/git.sh.in:69 scripts/libmakepkg/source/hg.sh.in:56
+#: scripts/libmakepkg/source/git.sh.in:66
+#: scripts/libmakepkg/source/hg.sh.in:56
 #: scripts/libmakepkg/source/svn.sh.in:77
 msgid "Updating %s %s repo..."
 msgstr "Обновяване %s %s хранилище..."
 
-#: scripts/libmakepkg/source/git.sh.in:72 scripts/libmakepkg/source/hg.sh.in:60
+#: scripts/libmakepkg/source/git.sh.in:69
+#: scripts/libmakepkg/source/hg.sh.in:60
 #: scripts/libmakepkg/source/svn.sh.in:81
 msgid "Failure while updating %s %s repo"
 msgstr "Неуспех при обновяване %s %s хранилище"
 
-#: scripts/libmakepkg/source/git.sh.in:133
+#: scripts/libmakepkg/source/git.sh.in:130
 msgid "Failure while checking out version %s, the git tag has been forged"
 msgstr "Неизправност при проверка на версията %s, git таг-а е фалшив"
 
@@ -1499,11 +1478,9 @@ msgstr "Премахване файловете на статични библи
 msgid "Stripping unneeded symbols from binaries and libraries..."
 msgstr "Смъкване ненужни симболи от бинари и библиотеки..."
 
-#: scripts/libmakepkg/tidy/strip.sh.in:195
+#: scripts/libmakepkg/tidy/strip.sh.in:190
 msgid "Copying source files needed for debug symbols..."
-msgstr ""
-"Копиране на изходни файлове, необходими за символи за отстраняване на "
-"грешки ..."
+msgstr "Копиране на изходни файлове, необходими за символи за отстраняване на грешки ..."
 
 #: scripts/libmakepkg/tidy/zipman.sh.in:35
 msgid "Compressing man and info pages..."

@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR "Pacman Development Team <pacman-dev@lists.archlinux.org>"
 # This file is distributed under the same license as the pacman-scripts package.
-#
+# 
 # Translators:
 # 492d30ca33568c5819a4f95c90617de1_3730d98 <c1a4cca7e440358a87e394a300ed18e2_882277>, 2021
 # Achilleas Pipinellis, 2013
@@ -19,15 +19,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arch Linux Pacman package manager\n"
 "Report-Msgid-Bugs-To: https://gitlab.archlinux.org/pacman/pacman/-/issues\n"
-"POT-Creation-Date: 2024-07-14 19:10+1000\n"
+"POT-Creation-Date: 2024-07-02 10:33+1000\n"
 "PO-Revision-Date: 2011-08-08 22:35+0000\n"
 "Last-Translator: th_ts <tsesmelistheodore@gmail.com>, 2014\n"
-"Language-Team: Greek (http://app.transifex.com/toofishes/archlinux-pacman/"
-"language/el/)\n"
-"Language: el\n"
+"Language-Team: Greek (http://app.transifex.com/toofishes/archlinux-pacman/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: scripts/makepkg.sh.in:141
@@ -74,12 +73,12 @@ msgstr "Αδυναμία εύρεσης πηγαίου αρχείου %s."
 #: scripts/libmakepkg/source/file.sh.in:75
 #: scripts/libmakepkg/source/file.sh.in:145
 #: scripts/libmakepkg/source/git.sh.in:54
-#: scripts/libmakepkg/source/git.sh.in:66
-#: scripts/libmakepkg/source/git.sh.in:102
-#: scripts/libmakepkg/source/git.sh.in:108
-#: scripts/libmakepkg/source/git.sh.in:125
-#: scripts/libmakepkg/source/git.sh.in:134
-#: scripts/libmakepkg/source/git.sh.in:142
+#: scripts/libmakepkg/source/git.sh.in:63
+#: scripts/libmakepkg/source/git.sh.in:99
+#: scripts/libmakepkg/source/git.sh.in:105
+#: scripts/libmakepkg/source/git.sh.in:122
+#: scripts/libmakepkg/source/git.sh.in:131
+#: scripts/libmakepkg/source/git.sh.in:139
 #: scripts/libmakepkg/source/hg.sh.in:52 scripts/libmakepkg/source/hg.sh.in:94
 #: scripts/libmakepkg/source/hg.sh.in:103
 #: scripts/libmakepkg/source/hg.sh.in:108
@@ -199,17 +198,16 @@ msgstr "Έχει ήδη δημιουργηθεί πακέτο (%s για αντ�
 #: scripts/makepkg.sh.in:813
 msgid ""
 "The package group has already been built, installing existing packages..."
-msgstr ""
-"Έχει ήδη δημιουργηθεί η ομάδα πακέτων, εγκατάσταση υπαρχόντων πακέτων..."
+msgstr "Έχει ήδη δημιουργηθεί η ομάδα πακέτων, εγκατάσταση υπαρχόντων πακέτων..."
 
 #: scripts/makepkg.sh.in:817
 msgid "The package group has already been built. (use %s to overwrite)"
 msgstr "Έχει ήδη δημιουργηθεί η ομάδα πακέτων (%s για αντικατάσταση)."
 
 #: scripts/makepkg.sh.in:822
-msgid "Part of the package group has already been built. (use %s to overwrite)"
-msgstr ""
-"Έχει ήδη δημιουργηθεί μέρος από την ομάδα πακέτων (%s για αντικατάσταση)."
+msgid ""
+"Part of the package group has already been built. (use %s to overwrite)"
+msgstr "Έχει ήδη δημιουργηθεί μέρος από την ομάδα πακέτων (%s για αντικατάσταση)."
 
 #: scripts/makepkg.sh.in:876
 msgid "Make packages compatible for use with pacman"
@@ -240,13 +238,13 @@ msgid "  -d, --nodeps     Skip all dependency checks"
 msgstr "  -d, --nodeps     Παράλειψη όλων των ελέγχων εξαρτήσεων"
 
 #: scripts/makepkg.sh.in:885
-msgid "  -D, --dir <dir>  Change to directory <dir> before processing PKGBUILD"
+msgid ""
+"  -D, --dir <dir>  Change to directory <dir> before processing PKGBUILD"
 msgstr ""
 
 #: scripts/makepkg.sh.in:886
 msgid "  -e, --noextract  Do not extract source files (use existing %s dir)"
-msgstr ""
-"  -e, --noextract  Μη εξαγωγή πηγαίων αρχείων (χρήση υπάρχοντος καταλόγου %s)"
+msgstr "  -e, --noextract  Μη εξαγωγή πηγαίων αρχείων (χρήση υπάρχοντος καταλόγου %s)"
 
 #: scripts/makepkg.sh.in:887
 msgid "  -f, --force      Overwrite existing package"
@@ -278,18 +276,16 @@ msgstr "  -o, --nobuild    Λήψη αρχείων και εξαγωγή μόν�
 
 #: scripts/makepkg.sh.in:894
 msgid "  -p <file>        Use an alternate build script (instead of '%s')"
-msgstr ""
-"  -p <file>        Χρήση εναλλακτικού σεναρίου μεταγλώττισης (αντί του '%s')"
+msgstr "  -p <file>        Χρήση εναλλακτικού σεναρίου μεταγλώττισης (αντί του '%s')"
 
 #: scripts/makepkg.sh.in:895
 msgid ""
 "  -r, --rmdeps     Remove installed dependencies after a successful build"
-msgstr ""
-"  -r, --rmdeps     Κατάργηση εγκατεστημένων εξαρτήσεων μετά κατόπιν "
-"επιτυχούς δημιουργίας"
+msgstr "  -r, --rmdeps     Κατάργηση εγκατεστημένων εξαρτήσεων μετά κατόπιν επιτυχούς δημιουργίας"
 
 #: scripts/makepkg.sh.in:896
-msgid "  -R, --repackage  Repackage contents of the package without rebuilding"
+msgid ""
+"  -R, --repackage  Repackage contents of the package without rebuilding"
 msgstr "  -R, --repackage  Ανασύνθεση πακέτου χωρίς αναδημιουργία"
 
 #: scripts/makepkg.sh.in:897
@@ -299,8 +295,7 @@ msgstr "  -s, --syncdeps   Εγκατάσταση απουσών εξαρτήσ�
 #: scripts/makepkg.sh.in:898
 msgid ""
 "  -S, --source     Generate a source-only tarball without downloaded sources"
-msgstr ""
-"  -S, --source     Δημιουργία πηγαίου αρχείου tar χωρίς ληφθείσες πηγές"
+msgstr "  -S, --source     Δημιουργία πηγαίου αρχείου tar χωρίς ληφθείσες πηγές"
 
 #: scripts/makepkg.sh.in:899
 msgid "  -V, --version    Show version information and exit"
@@ -310,9 +305,7 @@ msgstr "  -V, --version    Εμφάνιση αριθμού έκδοσης και
 msgid ""
 "  --allsource      Generate a source-only tarball including downloaded "
 "sources"
-msgstr ""
-"  --allsource      Δημιουργία πηγαίου αρχείου tar συμπεριλαμβάνοντας "
-"ληφθείσες πηγές"
+msgstr "  --allsource      Δημιουργία πηγαίου αρχείου tar συμπεριλαμβάνοντας ληφθείσες πηγές"
 
 #: scripts/makepkg.sh.in:901
 msgid "  --check          Run the %s function in the %s"
@@ -320,8 +313,7 @@ msgstr "  --check          Εκτέλεση συνάρτησης %s στο %s"
 
 #: scripts/makepkg.sh.in:902
 msgid "  --config <file>  Use an alternate config file (instead of '%s')"
-msgstr ""
-"  --config <file>  Χρήση εναλλακτικού αρχείου ρυθμίσεων (αντί του '%s')"
+msgstr "  --config <file>  Χρήση εναλλακτικού αρχείου ρυθμίσεων (αντί του '%s')"
 
 #: scripts/makepkg.sh.in:903
 msgid "  --holdver        Do not update VCS sources"
@@ -329,9 +321,9 @@ msgstr "  --holdver        Μη ενημέρωση πηγών CVS"
 
 #: scripts/makepkg.sh.in:904
 msgid ""
-"  --key <key>      Specify a key to use for %s signing instead of the default"
-msgstr ""
-"  --key <key>      Ορισμός κλειδιού για υπογραφή %s αντί του προεπιλεγμένου"
+"  --key <key>      Specify a key to use for %s signing instead of the "
+"default"
+msgstr "  --key <key>      Ορισμός κλειδιού για υπογραφή %s αντί του προεπιλεγμένου"
 
 #: scripts/makepkg.sh.in:905
 msgid "  --noarchive      Do not create package archive"
@@ -351,8 +343,7 @@ msgstr "  --nosign         Χωρίς δημουργία υπογραφής γι
 
 #: scripts/makepkg.sh.in:909
 msgid "  --packagelist    Only list package filepaths that would be produced"
-msgstr ""
-"  --packagelist    Μόνο προβολή των παραγόμενων διαδρομών αρχείων συσκευασίας"
+msgstr "  --packagelist    Μόνο προβολή των παραγόμενων διαδρομών αρχείων συσκευασίας"
 
 #: scripts/makepkg.sh.in:910
 msgid "  --printsrcinfo   Print the generated SRCINFO and exit"
@@ -364,8 +355,7 @@ msgstr "  --sign           Υπογραφή δημιουργηθέντος πα�
 
 #: scripts/makepkg.sh.in:912
 msgid "  --skipchecksums  Do not verify checksums of the source files"
-msgstr ""
-"  --skipchecksums  Χωρίς επαλήθευση αθροισμάτων ελέγχου πηγαίων αρχείων"
+msgstr "  --skipchecksums  Χωρίς επαλήθευση αθροισμάτων ελέγχου πηγαίων αρχείων"
 
 #: scripts/makepkg.sh.in:913
 msgid ""
@@ -380,9 +370,7 @@ msgstr "  --skippgpcheck   Χωρίς επαλήθευση υπογραφών PG
 msgid ""
 "  --verifysource   Download source files (if needed) and perform integrity "
 "checks"
-msgstr ""
-"  --verifysource   Λήψη πηγαίων αρχείων (εάν απαιτείται) και έλεγχοι "
-"ακεραιότητας"
+msgstr "  --verifysource   Λήψη πηγαίων αρχείων (εάν απαιτείται) και έλεγχοι ακεραιότητας"
 
 #: scripts/makepkg.sh.in:917
 msgid "These options can be passed to %s:"
@@ -415,10 +403,7 @@ msgstr "Εάν το %s δεν καθοριστεί, το %s θα αναζητή�
 msgid ""
 "This is free software; see the source for copying conditions.\\nThere is NO "
 "WARRANTY, to the extent permitted by law.\\n"
-msgstr ""
-"Αυτό είναι ελεύθερο λογισμικό; δείτε τον πηγαίο κώδικα για τις συνθήκες "
-"αντιγραφής\\nΚΑΜΜΙΑ ΕΓΓΥΗΣΗ δεν δίδεται, στον βαθμό που επιτρέπεται από τον "
-"νόμο.\\n"
+msgstr "Αυτό είναι ελεύθερο λογισμικό; δείτε τον πηγαίο κώδικα για τις συνθήκες αντιγραφής\\nΚΑΜΜΙΑ ΕΓΓΥΗΣΗ δεν δίδεται, στον βαθμό που επιτρέπεται από τον νόμο.\\n"
 
 #: scripts/makepkg.sh.in:1042 scripts/repo-add.sh.in:602
 msgid "%s signal caught. Exiting..."
@@ -428,9 +413,7 @@ msgstr "Λήψη σήματος %s. Έξοδος..."
 msgid ""
 "Running %s as root is not allowed as it can cause permanent,\\ncatastrophic "
 "damage to your system."
-msgstr ""
-"Εκτέλεση του %s ως root δεν επιτρέπεται καθώς μπορεί να προξενήσει μόνιμη, "
-"καταστροφική ζημία στο σύστημα."
+msgstr "Εκτέλεση του %s ως root δεν επιτρέπεται καθώς μπορεί να προξενήσει μόνιμη, καταστροφική ζημία στο σύστημα."
 
 #: scripts/makepkg.sh.in:1118
 msgid "Do not use the %s option. This option is only for internal use by %s."
@@ -558,9 +541,7 @@ msgstr "Απαιτούνται σωστές άδειες για την αναβ�
 
 #: scripts/pacman-db-upgrade.sh.in:140
 msgid "Pacman lock file was found. Cannot run while pacman is running."
-msgstr ""
-"Υπάρχει αρχείο κλειδώματος του pacman. Αδυναμία εκτέλεσης ενώ ο pacman "
-"λειτουργεί."
+msgstr "Υπάρχει αρχείο κλειδώματος του pacman. Αδυναμία εκτέλεσης ενώ ο pacman λειτουργεί."
 
 #: scripts/pacman-db-upgrade.sh.in:152
 msgid "Pre-3.5 database format detected - upgrading..."
@@ -576,9 +557,7 @@ msgstr "Εντοπισμός μορφής βάσης δεδομένων προ-4
 
 #: scripts/pacman-db-upgrade.sh.in:185
 msgid "symlink '%s' points outside pacman root, manual repair required"
-msgstr ""
-"ο συμβολικός δεσμός '%s' δείχνει εκτός ριζικού καταλόγου pacman, απαιτείται "
-"χειροκίνητη επιδιόρθωση"
+msgstr "ο συμβολικός δεσμός '%s' δείχνει εκτός ριζικού καταλόγου pacman, απαιτείται χειροκίνητη επιδιόρθωση"
 
 #: scripts/pacman-key.sh.in:58
 msgid "Usage: %s [options] operation [targets]"
@@ -594,8 +573,7 @@ msgstr "Λειτουργίες:"
 
 #: scripts/pacman-key.sh.in:63
 msgid "  -a, --add                 Add the specified keys (empty for stdin)"
-msgstr ""
-"  -a, --add                 Προσθήκη καθορισμένων κλειδιών (κενό για stdin)"
+msgstr "  -a, --add                 Προσθήκη καθορισμένων κλειδιών (κενό για stdin)"
 
 #: scripts/pacman-key.sh.in:64
 msgid "  -d, --delete              Remove the specified keyids"
@@ -608,9 +586,7 @@ msgstr "  -e, --export              Εξαγωγή καθορισμένων ή �
 #: scripts/pacman-key.sh.in:66
 msgid ""
 "  -f, --finger              List fingerprint for specified or all keyids"
-msgstr ""
-"  -f, --finger              Παράθεση αποτυπωμάτων καθορισμένων ή όλων των "
-"κλειδιών"
+msgstr "  -f, --finger              Παράθεση αποτυπωμάτων καθορισμένων ή όλων των κλειδιών"
 
 #: scripts/pacman-key.sh.in:67
 msgid "  -l, --list-keys           List the specified or all keys"
@@ -627,14 +603,12 @@ msgstr "  -u, --updatedb            Ενημέρωση της trustdb του pac
 #: scripts/pacman-key.sh.in:70
 msgid ""
 "  -v, --verify              Verify the file(s) specified by the signature(s)"
-msgstr ""
-"  -v, --verify              Επαλήθευση αρχείου(-ων) βάσει υπογραφής(-ών)"
+msgstr "  -v, --verify              Επαλήθευση αρχείου(-ων) βάσει υπογραφής(-ών)"
 
 #: scripts/pacman-key.sh.in:71
 msgid ""
 "  --edit-key                Present a menu for key management task on keyids"
-msgstr ""
-"  --edit-key                Προβολή μενού εργασιών διαχείρισης κλειδιών"
+msgstr "  --edit-key                Προβολή μενού εργασιών διαχείρισης κλειδιών"
 
 #: scripts/pacman-key.sh.in:72
 msgid "  --import                  Imports pubring.gpg from dir(s)"
@@ -644,9 +618,7 @@ msgstr "  --import                  Εισαγωγή pubring.gpg από κατά
 msgid ""
 "  --import-trustdb          Imports ownertrust values from trustdb.gpg in "
 "dir(s)"
-msgstr ""
-"  --import-trustdb          Εισαγωγή τιμών ιδιο-εμπιστοσύνης trustdb.gpg από "
-"κατάλογο(-ους)"
+msgstr "  --import-trustdb          Εισαγωγή τιμών ιδιο-εμπιστοσύνης trustdb.gpg από κατάλογο(-ους)"
 
 #: scripts/pacman-key.sh.in:74
 msgid "  --init                    Ensure the keyring is properly initialized"
@@ -664,16 +636,12 @@ msgstr "  --lsign-key               Τοπική υπογραφή καθορισ
 msgid ""
 "  --populate                Reload the default keys from the (given) "
 "keyrings\\n                            in '%s'"
-msgstr ""
-"  --populate                Ανανέωση προεπιλεγμένων κλειδιών από "
-"(δοθέντες)\\n                            κλειδούχους στο '%s'"
+msgstr "  --populate                Ανανέωση προεπιλεγμένων κλειδιών από (δοθέντες)\\n                            κλειδούχους στο '%s'"
 
 #: scripts/pacman-key.sh.in:79
 msgid ""
 "  --refresh-keys            Update specified or all keys from a keyserver"
-msgstr ""
-"  --refresh-keys            Ανανέωση καθορισμένων ή όλων των κλειδιών από "
-"διακομιστή"
+msgstr "  --refresh-keys            Ανανέωση καθορισμένων ή όλων των κλειδιών από διακομιστή"
 
 #: scripts/pacman-key.sh.in:80
 msgid "  --verbose                 Show extra information"
@@ -681,32 +649,25 @@ msgstr "  --verbose                 Προβολή επιπλέον πληροφ
 
 #: scripts/pacman-key.sh.in:83
 msgid ""
-"  --config <file>           Use an alternate config file (instead "
-"of\\n                            '%s')"
-msgstr ""
-"  --config <file>           Χρήση εναλλακτικού αρχείου ρυθμίσεων (αντί του "
-"'%s')"
+"  --config <file>           Use an alternate config file (instead of\\n"
+"                            '%s')"
+msgstr "  --config <file>           Χρήση εναλλακτικού αρχείου ρυθμίσεων (αντί του '%s')"
 
 #: scripts/pacman-key.sh.in:85
 msgid ""
-"  --gpgdir <dir>            Set an alternate directory for GnuPG "
-"(instead\\n                            of '%s')"
-msgstr ""
-"  --gpgdir <dir>            Ορισμός εναλλακτικού καταλόγου GnuPG (αντί του "
-"'%s')"
+"  --gpgdir <dir>            Set an alternate directory for GnuPG (instead\\n"
+"                            of '%s')"
+msgstr "  --gpgdir <dir>            Ορισμός εναλλακτικού καταλόγου GnuPG (αντί του '%s')"
 
 #: scripts/pacman-key.sh.in:87
 msgid ""
 "  --populate-from <dir>     Set an alternate directory for --populate "
 "(instead\\n                            of '%s')"
-msgstr ""
-"  --populate-from <dir>     Ορισμός εναλλακτικού καταλόγου για --populate "
-"(αντί\\n                            του '%s')"
+msgstr "  --populate-from <dir>     Ορισμός εναλλακτικού καταλόγου για --populate (αντί\\n                            του '%s')"
 
 #: scripts/pacman-key.sh.in:89
 msgid "  --keyserver <server-url>  Specify a keyserver to use if necessary"
-msgstr ""
-"  --keyserver <server-url>  Ορισμός διακομιστή κλειδιών, εάν απαιτείται"
+msgstr "  --keyserver <server-url>  Ορισμός διακομιστή κλειδιών, εάν απαιτείται"
 
 #: scripts/pacman-key.sh.in:91
 msgid "  -h, --help                Show this help message and exit"
@@ -879,8 +840,7 @@ msgstr "Αδυναμία ενημέρωσης βάσης εμπιστοσύνη�
 
 #: scripts/pacman-key.sh.in:690
 msgid "Cannot find the %s binary required for all %s operations."
-msgstr ""
-"Δεν βρέθηκε το εκτελέσιμο %s που απαιτείται για όλες τις λειτουργίες του %s."
+msgstr "Δεν βρέθηκε το εκτελέσιμο %s που απαιτείται για όλες τις λειτουργίες του %s."
 
 #: scripts/pacman-key.sh.in:695
 msgid "%s needs to be run as root for this operation."
@@ -912,11 +872,9 @@ msgstr "Χρήση: repo-add [options] <path-to-db> <package> ...\\n"
 
 #: scripts/repo-add.sh.in:63
 msgid ""
-"repo-add will update a package database by reading a package file."
-"\\nMultiple packages to add can be specified on the command line.\\n"
-msgstr ""
-"Το repo-add ενημερώνει μια βάση διαβάζοντας ένα αρχείο πακέτου.\\nΜπορούν να "
-"καθορισθούν στην γραμμή εντολών πολλαπλά πακέτα προς προσθήκη.\\n"
+"repo-add will update a package database by reading a package "
+"file.\\nMultiple packages to add can be specified on the command line.\\n"
+msgstr "Το repo-add ενημερώνει μια βάση διαβάζοντας ένα αρχείο πακέτου.\\nΜπορούν να καθορισθούν στην γραμμή εντολών πολλαπλά πακέτα προς προσθήκη.\\n"
 
 #: scripts/repo-add.sh.in:67 scripts/repo-add.sh.in:79
 msgid "Options:\\n"
@@ -924,25 +882,21 @@ msgstr "Επιλογές:\\n"
 
 #: scripts/repo-add.sh.in:68
 msgid ""
-"  -n, --new         only add packages that are not already in the database\\n"
-msgstr ""
-"  -n, --new         προσθήκη μόνο πακέτων που δεν υπάρχουν ήδη στην βάση\\n"
+"  -n, --new         only add packages that are not already in the "
+"database\\n"
+msgstr "  -n, --new         προσθήκη μόνο πακέτων που δεν υπάρχουν ήδη στην βάση\\n"
 
 #: scripts/repo-add.sh.in:69
 msgid ""
 "  -R, --remove      remove old package file from disk after updating "
 "database\\n"
-msgstr ""
-"-R, --remove διαγραφή παλαιού αρχείου πακέτου από τον δίσκο μετά την "
-"ενημέρωση της βάσης\\n"
+msgstr "-R, --remove διαγραφή παλαιού αρχείου πακέτου από τον δίσκο μετά την ενημέρωση της βάσης\\n"
 
 #: scripts/repo-add.sh.in:70
 msgid ""
-"  -p, --prevent-downgrade  do not add package to database if a newer version "
-"is already present\\n"
-msgstr ""
-"  -p, --prevent-downgrade  μη προσθήκη πακέτου στην βάση εάν ήδη υπάρχει "
-"νεότερη έκδοση\\n"
+"  -p, --prevent-downgrade  do not add package to database if a newer version"
+" is already present\\n"
+msgstr "  -p, --prevent-downgrade  μη προσθήκη πακέτου στην βάση εάν ήδη υπάρχει νεότερη έκδοση\\n"
 
 #: scripts/repo-add.sh.in:72
 msgid "Usage: repo-remove [options] <path-to-db> <packagename> ...\\n"
@@ -953,10 +907,7 @@ msgid ""
 "repo-remove will update a package database by removing the package "
 "name\\nspecified on the command line from the given repo database. "
 "Multiple\\npackages to remove can be specified on the command line.\\n"
-msgstr ""
-"Το repo-remove ενημερώνει μια βάση διαγράφοντας το πακέτο που "
-"ορίσθηκε\\nστην γραμμή εντολών από μια δοθείσα βάση αποθήκης. Μπορούν "
-"να\\nκαθορισθούν στην γραμμή εντολών πολλαπλά πακέτα προς διαγραφή.\\n"
+msgstr "Το repo-remove ενημερώνει μια βάση διαγράφοντας το πακέτο που ορίσθηκε\\nστην γραμμή εντολών από μια δοθείσα βάση αποθήκης. Μπορούν να\\nκαθορισθούν στην γραμμή εντολών πολλαπλά πακέτα προς διαγραφή.\\n"
 
 #: scripts/repo-add.sh.in:81
 msgid "Please move along, there is nothing to see here.\\n"
@@ -976,8 +927,7 @@ msgstr "  -s, --sign        υπογραφή βάσης με GnuPG μετά τη
 
 #: scripts/repo-add.sh.in:87
 msgid "  -k, --key <key>   use the specified key to sign the database\\n"
-msgstr ""
-"  -k, --key <key>   χρήση του συγκεκριμένου κλειδιού για υπογραφή βάσης\\n"
+msgstr "  -k, --key <key>   χρήση του συγκεκριμένου κλειδιού για υπογραφή βάσης\\n"
 
 #: scripts/repo-add.sh.in:88
 msgid "  -v, --verify      verify database's signature before update\\n"
@@ -986,15 +936,12 @@ msgstr "  -v, --verify      επαλήθευση υπογραφής βάσης �
 #: scripts/repo-add.sh.in:89
 msgid ""
 "\\nSee %s(8) for more details and descriptions of the available options.\\n"
-msgstr ""
-"\\nΔες %s(8) για λεπτομέρειες και περιγραφή των διαθέσιμων επιλογών.\\n"
+msgstr "\\nΔες %s(8) για λεπτομέρειες και περιγραφή των διαθέσιμων επιλογών.\\n"
 
 #: scripts/repo-add.sh.in:93
 msgid ""
 "Example:  repo-add /path/to/repo.db.tar.gz pacman-3.0.0-1-i686.pkg.tar.gz\\n"
-msgstr ""
-"Παράδειγμα:  repo-add /διαδρομή/προς/repo.db.tar.gz pacman-3.0.0-1-i686.pkg."
-"tar.gz\\n"
+msgstr "Παράδειγμα:  repo-add /διαδρομή/προς/repo.db.tar.gz pacman-3.0.0-1-i686.pkg.tar.gz\\n"
 
 #: scripts/repo-add.sh.in:95
 msgid "Example:  repo-remove /path/to/repo.db.tar.gz kernel26\\n"
@@ -1293,8 +1240,7 @@ msgstr "το %s δεν πρέπει να είναι array"
 
 #: scripts/libmakepkg/lint_config/variable.sh.in:66
 msgid "PACKAGER should have the format 'Example Name <email@address.invalid>'"
-msgstr ""
-"Το PACKAGER πρέπει να έχει μορφή 'Example Name <email@address.invalid>'"
+msgstr "Το PACKAGER πρέπει να έχει μορφή 'Example Name <email@address.invalid>'"
 
 #: scripts/libmakepkg/lint_package.sh.in:41
 msgid "Checking for packaging issues..."
@@ -1384,9 +1330,7 @@ msgstr "Το %s είναι μορφής 'ακέραιος[.ακέραιος]', �
 #: scripts/libmakepkg/lint_pkgbuild/pkgver.sh.in:41
 msgid ""
 "%s is not allowed to contain colons, forward slashes, hyphens or whitespace."
-msgstr ""
-"Δεν επιτρέπεται η χρήση ερωτηματικού, ανάποδης καθέτου, παύλας ή διαστήματος "
-"στο %s."
+msgstr "Δεν επιτρέπεται η χρήση ερωτηματικού, ανάποδης καθέτου, παύλας ή διαστήματος στο %s."
 
 #: scripts/libmakepkg/lint_pkgbuild/provides.sh.in:46
 msgid "%s array cannot contain comparison (< or >) operators."
@@ -1429,26 +1373,28 @@ msgid "Failure while pulling %s"
 msgstr "Αποτυχία λήψης %s"
 
 #: scripts/libmakepkg/source/bzr.sh.in:85
-#: scripts/libmakepkg/source/git.sh.in:124
-#: scripts/libmakepkg/source/hg.sh.in:93 scripts/libmakepkg/source/svn.sh.in:62
+#: scripts/libmakepkg/source/git.sh.in:121
+#: scripts/libmakepkg/source/hg.sh.in:93
+#: scripts/libmakepkg/source/svn.sh.in:62
 msgid "Unrecognized reference: %s"
 msgstr "Μη αναγνωρίσιμη αναφορά: %s"
 
 #: scripts/libmakepkg/source/bzr.sh.in:94
-#: scripts/libmakepkg/source/git.sh.in:93 scripts/libmakepkg/source/hg.sh.in:79
+#: scripts/libmakepkg/source/git.sh.in:90
+#: scripts/libmakepkg/source/hg.sh.in:79
 #: scripts/libmakepkg/source/svn.sh.in:95
 msgid "Creating working copy of %s %s repo..."
 msgstr "Δημιουργία αντιγράφου εργασίας του αποθετηρίου %s %s ..."
 
 #: scripts/libmakepkg/source/bzr.sh.in:100
-#: scripts/libmakepkg/source/git.sh.in:101
+#: scripts/libmakepkg/source/git.sh.in:98
 #: scripts/libmakepkg/source/hg.sh.in:102
 msgid "Failure while updating working copy of %s %s repo"
 msgstr "Αποτυχία ενημέρωσης αντιγράφου εργασίας αποθετηρίου %s με %s"
 
 #: scripts/libmakepkg/source/bzr.sh.in:105
-#: scripts/libmakepkg/source/git.sh.in:107
-#: scripts/libmakepkg/source/git.sh.in:141
+#: scripts/libmakepkg/source/git.sh.in:104
+#: scripts/libmakepkg/source/git.sh.in:138
 #: scripts/libmakepkg/source/hg.sh.in:107
 msgid "Failure while creating working copy of %s %s repo"
 msgstr "Αποτυχία δημιουργίας αντιγράφου εργασίας στο αποθετήριο %s %s"
@@ -1478,31 +1424,35 @@ msgstr "Αποτυχία εξαγωγής %s"
 msgid "NOT FOUND"
 msgstr "ΔΕΝ ΒΡΕΘΗΚΕ"
 
-#: scripts/libmakepkg/source/git.sh.in:51 scripts/libmakepkg/source/hg.sh.in:49
+#: scripts/libmakepkg/source/git.sh.in:51
+#: scripts/libmakepkg/source/hg.sh.in:49
 #: scripts/libmakepkg/source/svn.sh.in:69
 msgid "Cloning %s %s repo..."
 msgstr "Κλωνοποίηση του αποθετηρίου %s %s"
 
-#: scripts/libmakepkg/source/git.sh.in:53 scripts/libmakepkg/source/hg.sh.in:51
+#: scripts/libmakepkg/source/git.sh.in:53
+#: scripts/libmakepkg/source/hg.sh.in:51
 #: scripts/libmakepkg/source/svn.sh.in:72
 msgid "Failure while downloading %s %s repo"
 msgstr "Αποτυχία λήψης του αποθετηρίου %s %s"
 
-#: scripts/libmakepkg/source/git.sh.in:65
+#: scripts/libmakepkg/source/git.sh.in:62
 msgid "%s is not a clone of %s"
 msgstr "το %s δεν είναι κλώνος του %s"
 
-#: scripts/libmakepkg/source/git.sh.in:69 scripts/libmakepkg/source/hg.sh.in:56
+#: scripts/libmakepkg/source/git.sh.in:66
+#: scripts/libmakepkg/source/hg.sh.in:56
 #: scripts/libmakepkg/source/svn.sh.in:77
 msgid "Updating %s %s repo..."
 msgstr "Ενημέρωση του αποθετηρίου %s %s"
 
-#: scripts/libmakepkg/source/git.sh.in:72 scripts/libmakepkg/source/hg.sh.in:60
+#: scripts/libmakepkg/source/git.sh.in:69
+#: scripts/libmakepkg/source/hg.sh.in:60
 #: scripts/libmakepkg/source/svn.sh.in:81
 msgid "Failure while updating %s %s repo"
 msgstr "Αποτυχία ενημέρωσης του αποθετηρίου %s %s"
 
-#: scripts/libmakepkg/source/git.sh.in:133
+#: scripts/libmakepkg/source/git.sh.in:130
 msgid "Failure while checking out version %s, the git tag has been forged"
 msgstr "Αποτυχία ελέγχου εκδόσεως %s, η ετικέτα git έχει πλαστογραφηθεί"
 
@@ -1538,7 +1488,7 @@ msgstr "Διαγραφή αρχείων στατικών βιβλιοθηκών.
 msgid "Stripping unneeded symbols from binaries and libraries..."
 msgstr "Αφαίρεση αχρείαστων συμβόλων από εκτελέσιμα και βιβλιοθήκες..."
 
-#: scripts/libmakepkg/tidy/strip.sh.in:195
+#: scripts/libmakepkg/tidy/strip.sh.in:190
 msgid "Copying source files needed for debug symbols..."
 msgstr "Αντιγραφή απαραίτητων πηγαίων αρχείων για αποσφαλμάτωση..."
 

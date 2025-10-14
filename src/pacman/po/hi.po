@@ -1,22 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR "Pacman Development Team <pacman-dev@archlinux.org>"
 # This file is distributed under the same license as the pacman package.
-#
+# 
 # Translators:
 # Panwar108 <caspian7pena@gmail.com>, 2018,2020-2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Arch Linux Pacman package manager\n"
 "Report-Msgid-Bugs-To: https://gitlab.archlinux.org/pacman/pacman/-/issues\n"
-"POT-Creation-Date: 2024-07-14 19:10+1000\n"
+"POT-Creation-Date: 2024-07-02 10:33+1000\n"
 "PO-Revision-Date: 2010-11-29 23:17+0000\n"
 "Last-Translator: Panwar108 <caspian7pena@gmail.com>, 2018,2020-2021\n"
-"Language-Team: Hindi (http://app.transifex.com/toofishes/archlinux-pacman/"
-"language/hi/)\n"
-"Language: hi\n"
+"Language-Team: Hindi (http://app.transifex.com/toofishes/archlinux-pacman/language/hi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: hi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/pacman/callback.c:228
@@ -149,11 +148,10 @@ msgstr ""
 msgid ""
 "The following package cannot be upgraded due to unresolvable dependencies:\n"
 msgid_plural ""
-"The following packages cannot be upgraded due to unresolvable dependencies:\n"
-msgstr[0] ""
-"असमन्वयित आश्रित पैकेज होने के कारण निम्नलिखित पैकेज अपग्रेड करना संभव नहीं है :\n"
-msgstr[1] ""
-"असमन्वयित आश्रित पैकेज होने के कारण निम्नलिखित पैकेज अपग्रेड करना संभव नहीं है :\n"
+"The following packages cannot be upgraded due to unresolvable "
+"dependencies:\n"
+msgstr[0] "असमन्वयित आश्रित पैकेज होने के कारण निम्नलिखित पैकेज अपग्रेड करना संभव नहीं है :\n"
+msgstr[1] "असमन्वयित आश्रित पैकेज होने के कारण निम्नलिखित पैकेज अपग्रेड करना संभव नहीं है :\n"
 
 #: src/pacman/callback.c:510
 #, c-format
@@ -174,9 +172,7 @@ msgstr[1] "%2$s हेतु %1$zu प्रदाता उपलब्ध ह�
 msgid ""
 "File %s is corrupted (%s).\n"
 "Do you want to delete it?"
-msgstr ""
-"फाइल %s विकृत है (%s)।\n"
-"क्या इसे हटाना चाहते हैं?"
+msgstr "फाइल %s विकृत है (%s)।\nक्या इसे हटाना चाहते हैं?"
 
 #: src/pacman/callback.c:543
 #, c-format
@@ -455,10 +451,7 @@ msgid ""
 "failed to initialize alpm library:\n"
 "(root: %s, dbpath: %s)\n"
 "%s\n"
-msgstr ""
-"alpm लाइब्रेरी आरंभ करना विफल :\n"
-"(रूट : %s, डेटाबेस पथ : %s)\n"
-"%s\n"
+msgstr "alpm लाइब्रेरी आरंभ करना विफल :\n(रूट : %s, डेटाबेस पथ : %s)\n%s\n"
 
 #: src/pacman/conf.c:876
 #, c-format
@@ -808,14 +801,13 @@ msgstr "कार्य :\n"
 msgid ""
 "\n"
 "use '%s {-h --help}' with an operation for available options\n"
-msgstr ""
-"\n"
-" '%s {-h --help}' कार्य संबंधी उपलब्ध विकल्प हेतु\n"
+msgstr "\n '%s {-h --help}' कार्य संबंधी उपलब्ध विकल्प हेतु\n"
 
 #: src/pacman/pacman.c:125
 #, c-format
 msgid ""
-"  -c, --cascade        remove packages and all packages that depend on them\n"
+"  -c, --cascade        remove packages and all packages that depend on "
+"them\n"
 msgstr "  -c, --cascade        पैकेज व संबंधित आश्रित पैकेज हटाएँ\n"
 
 #: src/pacman/pacman.c:126
@@ -828,9 +820,7 @@ msgstr "  -n, --nosave         विन्यास फाइलें हट�
 msgid ""
 "  -s, --recursive      remove unnecessary dependencies\n"
 "                       (-ss includes explicitly installed dependencies)\n"
-msgstr ""
-"  -s, --recursive      अनावश्यक आश्रित पैकेज हटाएँ\n"
-"                       (स्पष्ट इंस्टॉल आश्रित पैकेज शामिल करने हेतु -ss)\n"
+msgstr "  -s, --recursive      अनावश्यक आश्रित पैकेज हटाएँ\n                       (स्पष्ट इंस्टॉल आश्रित पैकेज शामिल करने हेतु -ss)\n"
 
 #: src/pacman/pacman.c:129
 #, c-format
@@ -865,8 +855,7 @@ msgstr "  -g, --groups         पैकेज समूह के सभी स
 
 #: src/pacman/pacman.c:141
 #, c-format
-msgid ""
-"  -i, --info           view package information (-ii for backup files)\n"
+msgid "  -i, --info           view package information (-ii for backup files)\n"
 msgstr "  -i, --info           पैकेज जानकारी देखने हेतु (बैकअप फाइलों हेतु -ii)\n"
 
 #: src/pacman/pacman.c:142
@@ -886,17 +875,14 @@ msgstr "  -l, --list           खोजे गए पैकेज के स्
 msgid ""
 "  -m, --foreign        list installed packages not found in sync db(s) "
 "[filter]\n"
-msgstr ""
-"  -m, --foreign        समकालीन डेटाबेस में अनुपलब्ध इंस्टॉल पैकेज सूचीबद्ध करें [निस्पंदन]\n"
+msgstr "  -m, --foreign        समकालीन डेटाबेस में अनुपलब्ध इंस्टॉल पैकेज सूचीबद्ध करें [निस्पंदन]\n"
 
 #: src/pacman/pacman.c:145
 #, c-format
 msgid ""
 "  -n, --native         list installed packages only found in sync db(s) "
 "[filter]\n"
-msgstr ""
-"  -n, --native         केवल समकालीन डेटाबेस में उपलब्ध इंस्टॉल पैकेज सूचीबद्ध करें "
-"[निस्पंदन]\n"
+msgstr "  -n, --native         केवल समकालीन डेटाबेस में उपलब्ध इंस्टॉल पैकेज सूचीबद्ध करें [निस्पंदन]\n"
 
 #: src/pacman/pacman.c:146
 #, c-format
@@ -925,9 +911,7 @@ msgstr "  -s, --search <regex> व्यंजक मेल हेतु लो�
 msgid ""
 "  -t, --unrequired     list packages not (optionally) required by any\n"
 "                       package (-tt to ignore optdepends) [filter]\n"
-msgstr ""
-"  -t, --unrequired     अनावश्यक (वैकल्पिक) पैकेज सूचीबद्ध करें\n"
-"                            (वैकल्पिक आश्रित पैकेज अनदेखी हेतु -tt) [निस्पंदन]\n"
+msgstr "  -t, --unrequired     अनावश्यक (वैकल्पिक) पैकेज सूचीबद्ध करें\n                            (वैकल्पिक आश्रित पैकेज अनदेखी हेतु -tt) [निस्पंदन]\n"
 
 #: src/pacman/pacman.c:152
 #, c-format
@@ -946,9 +930,7 @@ msgstr "  -c, --clean          कैश डायरेक्टरी से �
 msgid ""
 "  -g, --groups         view all members of a package group\n"
 "                       (-gg to view all groups and members)\n"
-msgstr ""
-"  -g, --groups         पैकेज समूह के सभी सदस्य देखें\n"
-"                       (सभी समूह व सदस्य देखने हेतु -gg)\n"
+msgstr "  -g, --groups         पैकेज समूह के सभी सदस्य देखें\n                       (सभी समूह व सदस्य देखने हेतु -gg)\n"
 
 #: src/pacman/pacman.c:159
 #, c-format
@@ -964,8 +946,7 @@ msgstr "  -l, --list <repo>    पैकेज-संग्रह के पै�
 
 #: src/pacman/pacman.c:162
 #, c-format
-msgid ""
-"  -s, --search <regex> search remote repositories for matching strings\n"
+msgid "  -s, --search <regex> search remote repositories for matching strings\n"
 msgstr "  -s, --search <regex> व्यंजक मेल हेतु दूरस्थ पैकेज-संग्रह खोजें\n"
 
 #: src/pacman/pacman.c:163
@@ -979,9 +960,7 @@ msgstr "  -u, --sysupgrade     इंस्टॉल पैकेज अपग�
 msgid ""
 "  -y, --refresh        download fresh package databases from the server\n"
 "                       (-yy to force a refresh even if up to date)\n"
-msgstr ""
-"  -y, --refresh        सर्वर से नवीनतम पैकेज डेटाबेस डाउनलोड करें\n"
-"                       (नवीनतम होने पर भी रिफ्रेश हेतु -yy)\n"
+msgstr "  -y, --refresh        सर्वर से नवीनतम पैकेज डेटाबेस डाउनलोड करें\n                       (नवीनतम होने पर भी रिफ्रेश हेतु -yy)\n"
 
 #: src/pacman/pacman.c:170
 #, c-format
@@ -998,8 +977,7 @@ msgstr "      --asexplicit     स्पष्ट इंस्टॉल पै�
 msgid ""
 "  -k, --check          test local database for validity (-kk for sync "
 "databases)\n"
-msgstr ""
-"  -k, --check          लोकल डेटाबेस प्रमाणिकता जाँच (डेटाबेस समकालीन हेतु -kk)\n"
+msgstr "  -k, --check          लोकल डेटाबेस प्रमाणिकता जाँच (डेटाबेस समकालीन हेतु -kk)\n"
 
 #: src/pacman/pacman.c:173
 #, c-format
@@ -1016,9 +994,7 @@ msgstr "  -x, --regex          सामान्य व्यंजक द्�
 msgid ""
 "      --machinereadable\n"
 "                       produce machine-readable output\n"
-msgstr ""
-"      --machinereadable\n"
-"                       मशीन द्वारा रीड योग्य आउटपुट बनाने हेतु\n"
+msgstr "      --machinereadable\n                       मशीन द्वारा रीड योग्य आउटपुट बनाने हेतु\n"
 
 #: src/pacman/pacman.c:191
 #, c-format
@@ -1031,11 +1007,8 @@ msgstr "  -w, --downloadonly   पैकेज डाउनलोड करे�
 #, c-format
 msgid ""
 "      --overwrite <glob>\n"
-"                       overwrite conflicting files (can be used more than "
-"once)\n"
-msgstr ""
-"      --overwrite <glob>\n"
-"                       विरुद्ध फाइलें अधिलेखित करें (एकाधिक उपयोग संभव)\n"
+"                       overwrite conflicting files (can be used more than once)\n"
+msgstr "      --overwrite <glob>\n                       विरुद्ध फाइलें अधिलेखित करें (एकाधिक उपयोग संभव)\n"
 
 #: src/pacman/pacman.c:194
 #, c-format
@@ -1059,32 +1032,25 @@ msgstr "      --ignore <pkg>   पैकेज अपग्रेड अनद�
 msgid ""
 "      --ignoregroup <grp>\n"
 "                       ignore a group upgrade (can be used more than once)\n"
-msgstr ""
-"      --ignoregroup <grp>\n"
-"                       समूह अपग्रेड अनदेखी करें (एकाधिक उपयोग संभव)\n"
+msgstr "      --ignoregroup <grp>\n                       समूह अपग्रेड अनदेखी करें (एकाधिक उपयोग संभव)\n"
 
 #: src/pacman/pacman.c:201
 #, c-format
 msgid ""
 "  -d, --nodeps         skip dependency version checks (-dd to skip all "
 "checks)\n"
-msgstr ""
-"  -d, --nodeps         आश्रित पैकेज संस्करण जाँच अनदेखी करें (सभी जाँच निरस्त करने हेतु -"
-"dd)\n"
+msgstr "  -d, --nodeps         आश्रित पैकेज संस्करण जाँच अनदेखी करें (सभी जाँच निरस्त करने हेतु -dd)\n"
 
 #: src/pacman/pacman.c:202
 #, c-format
 msgid ""
 "      --assume-installed <package=version>\n"
 "                       add a virtual package to satisfy dependencies\n"
-msgstr ""
-"      --assume-installed <package=version>\n"
-"                       आश्रित पैकेज समन्वयन हेतु वर्चुअल पैकेज जोड़ें\n"
+msgstr "      --assume-installed <package=version>\n                       आश्रित पैकेज समन्वयन हेतु वर्चुअल पैकेज जोड़ें\n"
 
 #: src/pacman/pacman.c:204
 #, c-format
-msgid ""
-"      --dbonly         only modify database entries, not package files\n"
+msgid "      --dbonly         only modify database entries, not package files\n"
 msgstr "      --dbonly         केवल डेटाबेस प्रविष्टियां बदलें, न की पैकेज\n"
 
 #: src/pacman/pacman.c:205
@@ -1111,9 +1077,7 @@ msgstr "  -p, --print          कार्य करने के स्था�
 msgid ""
 "      --print-format <string>\n"
 "                       specify how the targets should be printed\n"
-msgstr ""
-"      --print-format <string>\n"
-"                       लक्ष्य दिखाना निर्दिष्ट करें\n"
+msgstr "      --print-format <string>\n                       लक्ष्य दिखाना निर्दिष्ट करें\n"
 
 #: src/pacman/pacman.c:213
 #, c-format
@@ -1190,9 +1154,7 @@ msgstr "      --confirm        पुष्टिकरण हेतु सद�
 msgid ""
 "      --disable-download-timeout\n"
 "                       use relaxed timeouts for download\n"
-msgstr ""
-"      --disable-download-timeout\n"
-"                       डाउनलोड हेतु समयसीमा समाप्ति निष्क्रिय\n"
+msgstr "      --disable-download-timeout\n                       डाउनलोड हेतु समयसीमा समाप्ति निष्क्रिय\n"
 
 #: src/pacman/pacman.c:229
 #, c-format
@@ -1206,9 +1168,7 @@ msgstr ""
 msgid ""
 "                       This program may be freely redistributed under\n"
 "                       the terms of the GNU General Public License.\n"
-msgstr ""
-"                       इस प्रोग्राम का GNU जनरल पब्लिक लाइसेंस की\n"
-"                       शर्तों के तहत स्वतंत्र रूप से पुनःवितरण संभव है।\n"
+msgstr "                       इस प्रोग्राम का GNU जनरल पब्लिक लाइसेंस की\n                       शर्तों के तहत स्वतंत्र रूप से पुनःवितरण संभव है।\n"
 
 #: src/pacman/pacman.c:282
 #, c-format
@@ -1318,9 +1278,7 @@ msgstr "'%s' पैकेज लोड करना विफल : %s\n"
 #: src/pacman/query.c:491
 #, c-format
 msgid "'%s' is a file, you might want to use %s.\n"
-msgstr ""
-"'%s' एक फाइल है, संभवतः आप %s उपयोग करना चाहते हैं।\n"
-"\n"
+msgstr "'%s' एक फाइल है, संभवतः आप %s उपयोग करना चाहते हैं।\n\n"
 
 #: src/pacman/remove.c:57 src/pacman/sync.c:574
 #, c-format
@@ -1881,9 +1839,7 @@ msgstr "त्रुटि : %s द्वारा निदेश निर्�
 msgid ""
 "Test a pacman package for validity.\n"
 "\n"
-msgstr ""
-"पैकमैन पैकेज की प्रमाणिकता जाँच।\n"
-"\n"
+msgstr "पैकमैन पैकेज की प्रमाणिकता जाँच।\n\n"
 
 #: src/util/testpkg.c:57
 #, c-format

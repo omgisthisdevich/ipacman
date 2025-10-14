@@ -1,24 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR "Pacman Development Team <pacman-dev@archlinux.org>"
 # This file is distributed under the same license as the libalpm package.
-#
+# 
 # Translators:
-# Xəyyam Qocayev <xxmn77@gmail.com>, 2021-2024
-# Xəyyam Qocayev <xxmn77@gmail.com>, 2021,2024
-# Xəyyam Qocayev <xxmn77@gmail.com>, 2021
+# xxmn77 <xxmn77@gmail.com>, 2021-2024
+# xxmn77 <xxmn77@gmail.com>, 2021,2024
+# xxmn77 <xxmn77@gmail.com>, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Arch Linux Pacman package manager\n"
 "Report-Msgid-Bugs-To: https://gitlab.archlinux.org/pacman/pacman/-/issues\n"
-"POT-Creation-Date: 2024-07-14 19:10+1000\n"
+"POT-Creation-Date: 2024-07-02 10:33+1000\n"
 "PO-Revision-Date: 2010-11-29 23:17+0000\n"
-"Last-Translator: Xəyyam Qocayev <xxmn77@gmail.com>, 2021-2024\n"
-"Language-Team: Azerbaijani (Azerbaijan) (http://app.transifex.com/toofishes/"
-"archlinux-pacman/language/az_AZ/)\n"
-"Language: az_AZ\n"
+"Last-Translator: xxmn77 <xxmn77@gmail.com>, 2021-2024\n"
+"Language-Team: Azerbaijani (Azerbaijan) (http://app.transifex.com/toofishes/archlinux-pacman/language/az_AZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: az_AZ\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lib/libalpm/add.c:90 lib/libalpm/sync.c:279
@@ -59,8 +58,7 @@ msgstr "%s adı, %s kimi dəyişdirilə bilmədi (%s)\n"
 #: lib/libalpm/add.c:210
 #, c-format
 msgid "file not found in file list for package %s. skipping extraction of %s\n"
-msgstr ""
-"%s paketi üçün fayl siyahısında fayl tapılmadı. %s çıxarılması buraxılır\n"
+msgstr "%s paketi üçün fayl siyahısında fayl tapılmadı. %s çıxarılması buraxılır\n"
 
 #: lib/libalpm/add.c:219
 #, c-format
@@ -72,18 +70,14 @@ msgstr "%s %s çıxarıla bilmədi: yol çox uzundur"
 msgid ""
 "directory permissions differ on %s\n"
 "filesystem: %o  package: %o\n"
-msgstr ""
-"%s-də kataloqa giriş icazələri fərqlidir \n"
-"fayl sistemi: %o paketi: %o\n"
+msgstr "%s-də kataloqa giriş icazələri fərqlidir \nfayl sistemi: %o paketi: %o\n"
 
 #: lib/libalpm/add.c:276
 #, c-format
 msgid ""
 "directory ownership differs on %s\n"
 "filesystem: %u:%u  package: %u:%u\n"
-msgstr ""
-"kataloqa sahiblik %s fayl sistemində\n"
-"fətqlənir: %u:%u paketi: %u:%u\n"
+msgstr "kataloqa sahiblik %s fayl sistemində\nfətqlənir: %u:%u paketi: %u:%u\n"
 
 #: lib/libalpm/add.c:292
 #, c-format
@@ -177,14 +171,12 @@ msgstr "%s faylı açıla bilmədi: %s\n"
 #: lib/libalpm/be_local.c:759 lib/libalpm/be_sync.c:612
 #, c-format
 msgid "%s database is inconsistent: name mismatch on package %s\n"
-msgstr ""
-"%s verilənlər bazası ziddiyətlidir: %s paketindəki ad ilə uyğun deyil\n"
+msgstr "%s verilənlər bazası ziddiyətlidir: %s paketindəki ad ilə uyğun deyil\n"
 
 #: lib/libalpm/be_local.c:765 lib/libalpm/be_sync.c:618
 #, c-format
 msgid "%s database is inconsistent: version mismatch on package %s\n"
-msgstr ""
-"%s verilənlər bazası ziddiyyətlidir: %s paketindəki versiya uyğun gəlmir\n"
+msgstr "%s verilənlər bazası ziddiyyətlidir: %s paketindəki versiya uyğun gəlmir\n"
 
 #: lib/libalpm/be_local.c:806
 #, c-format
@@ -265,14 +257,12 @@ msgstr "'%s' veri. bazası oxuna bilmədi (%s)\n"
 #: lib/libalpm/be_sync.c:519 lib/libalpm/be_sync.c:524
 #, c-format
 msgid "%s database is inconsistent: filename of package %s is illegal\n"
-msgstr ""
-"%s verilənlər bazası ziddiyətlidir: %s paketinin fayl_adı yararsızdır\n"
+msgstr "%s verilənlər bazası ziddiyətlidir: %s paketinin fayl_adı yararsızdır\n"
 
 #: lib/libalpm/be_sync.c:529
 #, c-format
 msgid "%s database is inconsistent: filename of package %s is too long\n"
-msgstr ""
-"%s verilənlər bazası ziddiyətlidir: %s paketinin fayl_adı çox uzundur\n"
+msgstr "%s verilənlər bazası ziddiyətlidir: %s paketinin fayl_adı çox uzundur\n"
 
 #: lib/libalpm/be_sync.c:594
 #, c-format
@@ -393,8 +383,7 @@ msgstr "'%s' faylının '%s'dən/dan alınması uğursuz oldu: %s\n"
 #: lib/libalpm/dload.c:562
 #, c-format
 msgid "failed retrieving file '%s' from %s : expected download size exceeded\n"
-msgstr ""
-"'%s' faylının '%s'dən/dan alınması uğursuz oldu: gözlənilən ölçünü aşdı\n"
+msgstr "'%s' faylının '%s'dən/dan alınması uğursuz oldu: gözlənilən ölçünü aşdı\n"
 
 #: lib/libalpm/dload.c:685
 #, c-format
@@ -406,37 +395,37 @@ msgstr "%s əksik görünür: %jd/%jd bayt\n"
 msgid "url '%s' is invalid\n"
 msgstr "url '%s' səhvdir\n"
 
-#: lib/libalpm/dload.c:864
+#: lib/libalpm/dload.c:861
 #, c-format
 msgid "failed to setup a download payload for %s\n"
 msgstr "%s üçün endirmə yükü ayarlandı\n"
 
-#: lib/libalpm/dload.c:876
+#: lib/libalpm/dload.c:873
 #, c-format
 msgid "curl returned error %d from transfer\n"
 msgstr "curl əməliyyatdan %d xətası ilə cavab verdi\n"
 
-#: lib/libalpm/dload.c:900
+#: lib/libalpm/dload.c:897
 #, c-format
 msgid "curl transfer error: %d\n"
 msgstr "curl əməliyyat xətası: %d\n"
 
-#: lib/libalpm/dload.c:963
+#: lib/libalpm/dload.c:959
 #, c-format
 msgid "could not chdir to download directory %s\n"
 msgstr "%s endirmə kataloquna keçilə bilmədi\n"
 
-#: lib/libalpm/dload.c:968
+#: lib/libalpm/dload.c:964
 #, c-format
 msgid "switching to sandbox user '%s' failed!\n"
 msgstr "\"%s\"  təcrid mühiti istifadəçisinə keçid uğursuz oldu!\n"
 
-#: lib/libalpm/dload.c:1361 lib/libalpm/sync.c:861
+#: lib/libalpm/dload.c:1357 lib/libalpm/sync.c:861
 #, c-format
 msgid "failed to retrieve some files\n"
 msgstr "bəzi fayllar alına bilmədi\n"
 
-#: lib/libalpm/dload.c:1384
+#: lib/libalpm/dload.c:1380
 #, c-format
 msgid "download completed successfully but no file in the cache\n"
 msgstr "endirmə uğurla tamamlandı, lakin keşdə fayl yoxdur\n"
@@ -823,35 +812,26 @@ msgstr "paketin meta verilənləri səhvdir (ad və ya versiya çatışmır)"
 msgid ""
 "invalid metadata for package %s-%s (package name cannot start with '.' or "
 "'-')\n"
-msgstr ""
-"%s-%s paketi üçün meta verilənləri səhvdir (paketin adı \".\" və ya \"-\" "
-"ilə başlaya bilməz)\n"
+msgstr "%s-%s paketi üçün meta verilənləri səhvdir (paketin adı \".\" və ya \"-\" ilə başlaya bilməz)\n"
 
 #: lib/libalpm/package.c:878
 #, c-format
 msgid ""
 "invalid metadata for package %s-%s (package name contains invalid "
 "characters)\n"
-msgstr ""
-"%s-%s paketi üçün meta verilənləri səhvdir (paketin adında səhv simvollar "
-"var)\n"
+msgstr "%s-%s paketi üçün meta verilənləri səhvdir (paketin adında səhv simvollar var)\n"
 
 #: lib/libalpm/package.c:885 lib/libalpm/package.c:889
 #, c-format
 msgid ""
 "invalid metadata for package %s-%s (package version contains invalid "
 "characters)\n"
-msgstr ""
-"%s-%s paketi üçün meta verilənlıri səhvdir (paketin adında səhv simvollar "
-"var)\n"
+msgstr "%s-%s paketi üçün meta verilənlıri səhvdir (paketin adında səhv simvollar var)\n"
 
 #: lib/libalpm/package.c:895
 #, c-format
-msgid ""
-"invalid metadata for package %s-%s (package name and version too long)\n"
-msgstr ""
-"%s-%s paketi üçün meta verilənləri səhvdir (paketin adı və ya versiyası çox "
-"uzundur)\n"
+msgid "invalid metadata for package %s-%s (package name and version too long)\n"
+msgstr "%s-%s paketi üçün meta verilənləri səhvdir (paketin adı və ya versiyası çox uzundur)\n"
 
 #: lib/libalpm/remove.c:111
 #, c-format
@@ -1023,9 +1003,7 @@ msgstr "həll olunmamış paket ziddiyyətləri aşkarlandı\n"
 #: lib/libalpm/sync.c:566
 #, c-format
 msgid "removing '%s-%s' from target list because it conflicts with '%s-%s'\n"
-msgstr ""
-"\"%s-%s\" hədəf siyahısından silinir, çünki o, \"%s-%s\" ilə ziddiyyət "
-"təşkil edir\n"
+msgstr "\"%s-%s\" hədəf siyahısından silinir, çünki o, \"%s-%s\" ilə ziddiyyət təşkil edir\n"
 
 #: lib/libalpm/sync.c:1020 lib/libalpm/sync.c:1187
 #, c-format

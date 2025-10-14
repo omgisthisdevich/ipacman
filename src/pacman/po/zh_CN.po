@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR "Pacman Development Team <pacman-dev@archlinux.org>"
 # This file is distributed under the same license as the pacman package.
-#
+# 
 # Translators:
 # Allan McRae <allan@archlinux.org>, 2014
 # Blask <blaskyy@gmail.com>, 2013
@@ -9,7 +9,7 @@
 # Feng Chao <chaofeng111@qq.com>, 2018-2019
 # Felix Yan <felixonmars@gmail.com>, 2015,2021
 # Feng Chao <chaofeng111@qq.com>, 2011,2013,2018
-# Jiachen YANG <farseerfc@gmail.com>, 2018-2021
+# Jiachen YANG <farseerfc@gmail.com>, 2018-2021,2025
 # lakejason0 <sunliyuan200402@outlook.com>, 2022-2024
 # Feng Chao <chaofeng111@qq.com>, 2011,2013
 # Feng Chao <chaofeng111@qq.com>, 2011,2013,2018
@@ -30,15 +30,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arch Linux Pacman package manager\n"
 "Report-Msgid-Bugs-To: https://gitlab.archlinux.org/pacman/pacman/-/issues\n"
-"POT-Creation-Date: 2024-07-14 19:10+1000\n"
+"POT-Creation-Date: 2024-07-02 10:33+1000\n"
 "PO-Revision-Date: 2010-11-29 23:17+0000\n"
-"Last-Translator: 张海, 2015,2018,2021\n"
-"Language-Team: Chinese (China) (http://app.transifex.com/toofishes/archlinux-"
-"pacman/language/zh_CN/)\n"
-"Language: zh_CN\n"
+"Last-Translator: Jiachen YANG <farseerfc@gmail.com>, 2018-2021,2025\n"
+"Language-Team: Chinese (China) (http://app.transifex.com/toofishes/archlinux-pacman/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/pacman/callback.c:228
@@ -171,7 +170,8 @@ msgstr "%s-%s%s%s 与 %s-%s%s%s 有冲突 (%s)。删除 %s 吗？"
 msgid ""
 "The following package cannot be upgraded due to unresolvable dependencies:\n"
 msgid_plural ""
-"The following packages cannot be upgraded due to unresolvable dependencies:\n"
+"The following packages cannot be upgraded due to unresolvable "
+"dependencies:\n"
 msgstr[0] "因为无法解决依赖关系，以下软件包无法进行更新：\n"
 
 #: src/pacman/callback.c:510
@@ -191,9 +191,7 @@ msgstr[0] "有 %zu 个软件包可提供 %s ：\n"
 msgid ""
 "File %s is corrupted (%s).\n"
 "Do you want to delete it?"
-msgstr ""
-"文件 %s 已损坏 (%s).\n"
-"打算删除吗？"
+msgstr "文件 %s 已损坏 (%s).\n打算删除吗？"
 
 #: src/pacman/callback.c:543
 #, c-format
@@ -338,7 +336,7 @@ msgstr "%s：%s（%s的校验和信息不存在）\n"
 #: src/pacman/check.c:204 src/pacman/check.c:210
 #, c-format
 msgid "%s: %s (%s checksum mismatch)\n"
-msgstr "%s：%s（%s校验和不一致）\n"
+msgstr "%s: %s（%s校验和不一致）\n"
 
 #: src/pacman/check.c:250 src/pacman/check.c:265 src/pacman/check.c:309
 #: src/pacman/check.c:363
@@ -388,7 +386,7 @@ msgstr[0] "malloc 失败：无法分配 %zu 字节\n"
 #: src/pacman/conf.c:251
 #, c-format
 msgid "switching to sandbox user '%s' failed!\n"
-msgstr ""
+msgstr "切换到沙盒用户 '%s' 时失败！\n"
 
 #: src/pacman/conf.c:349
 #, c-format
@@ -468,10 +466,7 @@ msgid ""
 "failed to initialize alpm library:\n"
 "(root: %s, dbpath: %s)\n"
 "%s\n"
-msgstr ""
-"初始化 alpm 库时失败：\n"
-"（root: %s，dbpath: %s）\n"
-"%s\n"
+msgstr "初始化 alpm 库时失败：\n（root: %s，dbpath: %s）\n%s\n"
 
 #: src/pacman/conf.c:876
 #, c-format
@@ -821,14 +816,13 @@ msgstr "操作:\n"
 msgid ""
 "\n"
 "use '%s {-h --help}' with an operation for available options\n"
-msgstr ""
-"\n"
-"使用 '%s {-h --help}' 及某个操作以查看可用选项\n"
+msgstr "\n使用 '%s {-h --help}' 及某个操作以查看可用选项\n"
 
 #: src/pacman/pacman.c:125
 #, c-format
 msgid ""
-"  -c, --cascade        remove packages and all packages that depend on them\n"
+"  -c, --cascade        remove packages and all packages that depend on "
+"them\n"
 msgstr "  -c, --cascade        删除软件包及所有依赖于此的软件包\n"
 
 #: src/pacman/pacman.c:126
@@ -841,9 +835,7 @@ msgstr "  -n, --nosave         删除配置文件\n"
 msgid ""
 "  -s, --recursive      remove unnecessary dependencies\n"
 "                       (-ss includes explicitly installed dependencies)\n"
-msgstr ""
-"  -s, --recursive      删除不需要的依赖关系\n"
-"                       (-ss 包括单独指定安装的依赖关系)\n"
+msgstr "  -s, --recursive      删除不需要的依赖关系\n                       (-ss 包括单独指定安装的依赖关系)\n"
 
 #: src/pacman/pacman.c:129
 #, c-format
@@ -878,8 +870,7 @@ msgstr "  -g, --groups         查看某软件包组所属的所有软件包\n"
 
 #: src/pacman/pacman.c:141
 #, c-format
-msgid ""
-"  -i, --info           view package information (-ii for backup files)\n"
+msgid "  -i, --info           view package information (-ii for backup files)\n"
 msgstr "  -i, --info           查看软件包信息 (-ii 查看备份文件) \n"
 
 #: src/pacman/pacman.c:142
@@ -899,8 +890,7 @@ msgstr "  -l, --list           列出被查询软件包的内容\n"
 msgid ""
 "  -m, --foreign        list installed packages not found in sync db(s) "
 "[filter]\n"
-msgstr ""
-"  -m, --foreign        列出没有在同步数据库时找到的已安装软件包 [过滤器]\n"
+msgstr "  -m, --foreign        列出没有在同步数据库时找到的已安装软件包 [过滤器]\n"
 
 #: src/pacman/pacman.c:145
 #, c-format
@@ -936,9 +926,7 @@ msgstr "  -s, --search <regex> 搜寻符合指定字符串的已安装本地的�
 msgid ""
 "  -t, --unrequired     list packages not (optionally) required by any\n"
 "                       package (-tt to ignore optdepends) [filter]\n"
-msgstr ""
-"  -t, --unrequired     列出不被任何软件包(可选)要求的软件包(-tt 忽略可选依"
-"赖) [过滤器]\n"
+msgstr "  -t, --unrequired     列出不被任何软件包(可选)要求的软件包(-tt 忽略可选依赖) [过滤器]\n"
 
 #: src/pacman/pacman.c:152
 #, c-format
@@ -957,9 +945,7 @@ msgstr "  -c, --clean          从缓存目录中删除旧软件包 (-cc 清除�
 msgid ""
 "  -g, --groups         view all members of a package group\n"
 "                       (-gg to view all groups and members)\n"
-msgstr ""
-"  -g, --groups         查看某软件包组所属的所有软件包\n"
-"                       (-gg 查看所有软件包组和所属于它们的软件包)\n"
+msgstr "  -g, --groups         查看某软件包组所属的所有软件包\n                       (-gg 查看所有软件包组和所属于它们的软件包)\n"
 
 #: src/pacman/pacman.c:159
 #, c-format
@@ -975,8 +961,7 @@ msgstr "  -l, --list <repo>    查看在该软件库中的软件包清单\n"
 
 #: src/pacman/pacman.c:162
 #, c-format
-msgid ""
-"  -s, --search <regex> search remote repositories for matching strings\n"
+msgid "  -s, --search <regex> search remote repositories for matching strings\n"
 msgstr "  -s, --search <正则表达式> 按照指定字符串查询远端软件库\n"
 
 #: src/pacman/pacman.c:163
@@ -990,9 +975,7 @@ msgstr "  -u, --sysupgrade     升级所有已安装的软件包 (-uu 可启用�
 msgid ""
 "  -y, --refresh        download fresh package databases from the server\n"
 "                       (-yy to force a refresh even if up to date)\n"
-msgstr ""
-"  -y, --refresh        从服务器下载新的软件包数据库\n"
-"                       (-yy 强制更新软件包数据库)\n"
+msgstr "  -y, --refresh        从服务器下载新的软件包数据库\n                       (-yy 强制更新软件包数据库)\n"
 
 #: src/pacman/pacman.c:170
 #, c-format
@@ -1026,9 +1009,7 @@ msgstr "  -x, --regex          启用正则表达式进行搜索\n"
 msgid ""
 "      --machinereadable\n"
 "                       produce machine-readable output\n"
-msgstr ""
-"      --machinereadable\n"
-"                       产生机器可读输出\n"
+msgstr "      --machinereadable\n                       产生机器可读输出\n"
 
 #: src/pacman/pacman.c:191
 #, c-format
@@ -1041,11 +1022,8 @@ msgstr "  -w, --downloadonly   下载但不安装/升级软件包\n"
 #, c-format
 msgid ""
 "      --overwrite <glob>\n"
-"                       overwrite conflicting files (can be used more than "
-"once)\n"
-msgstr ""
-" --overwrite <glob>\n"
-"                        覆盖冲突的文件（可以指定多次）\n"
+"                       overwrite conflicting files (can be used more than once)\n"
+msgstr " --overwrite <glob>\n                        覆盖冲突的文件（可以指定多次）\n"
 
 #: src/pacman/pacman.c:194
 #, c-format
@@ -1069,9 +1047,7 @@ msgstr "      --ignore <软件包>   升级时忽略某个软件包 (可多次�
 msgid ""
 "      --ignoregroup <grp>\n"
 "                       ignore a group upgrade (can be used more than once)\n"
-msgstr ""
-"      --ignoregroup <软件包组>\n"
-"                         升级时忽略某个软件包组 (可多次使用) \n"
+msgstr "      --ignoregroup <软件包组>\n                         升级时忽略某个软件包组 (可多次使用) \n"
 
 #: src/pacman/pacman.c:201
 #, c-format
@@ -1085,14 +1061,11 @@ msgstr "  -d, --nodeps         跳过依赖关系的版本检查 (-dd 跳过所�
 msgid ""
 "      --assume-installed <package=version>\n"
 "                       add a virtual package to satisfy dependencies\n"
-msgstr ""
-"      --assume-installed <package=version>\n"
-"                       添加一个虚拟包用以满足依赖要求\n"
+msgstr "      --assume-installed <package=version>\n                       添加一个虚拟包用以满足依赖要求\n"
 
 #: src/pacman/pacman.c:204
 #, c-format
-msgid ""
-"      --dbonly         only modify database entries, not package files\n"
+msgid "      --dbonly         only modify database entries, not package files\n"
 msgstr "      --dbonly         仅修改数据库条目，而非软件包文件\n"
 
 #: src/pacman/pacman.c:205
@@ -1119,9 +1092,7 @@ msgstr "  -p, --print          打印目标而不是执行操作\n"
 msgid ""
 "      --print-format <string>\n"
 "                       specify how the targets should be printed\n"
-msgstr ""
-"      --print-format <字符串>\n"
-"                       指定如何打印目标\n"
+msgstr "      --print-format <字符串>\n                       指定如何打印目标\n"
 
 #: src/pacman/pacman.c:213
 #, c-format
@@ -1198,25 +1169,21 @@ msgstr "      --confirm        总是询问确认\n"
 msgid ""
 "      --disable-download-timeout\n"
 "                       use relaxed timeouts for download\n"
-msgstr ""
-"      --disable-download-timeout\n"
-"                       下载时用宽松的超时\n"
+msgstr "      --disable-download-timeout\n                       下载时用宽松的超时\n"
 
 #: src/pacman/pacman.c:229
 #, c-format
 msgid ""
 "      --disable-sandbox\n"
 "                       disable the sandbox used for the downloader process\n"
-msgstr ""
+msgstr "      --disable-sandbox\n                       禁用下载程序的沙盒\n"
 
 #: src/pacman/pacman.c:249
 #, c-format
 msgid ""
 "                       This program may be freely redistributed under\n"
 "                       the terms of the GNU General Public License.\n"
-msgstr ""
-"                       本程序可以在GNU一般公众许可条款下\n"
-"                       自由分发\n"
+msgstr "                       本程序可以在GNU一般公众许可条款下\n                       自由分发\n"
 
 #: src/pacman/pacman.c:282
 #, c-format
@@ -1564,9 +1531,7 @@ msgstr "无法锁定数据库：%s\n"
 msgid ""
 "  if you're sure a package manager is not already\n"
 "  running, you can remove %s\n"
-msgstr ""
-"  如果你确认软件包管理器没有在运行，\n"
-"  你可以删除 %s。\n"
+msgstr "  如果你确认软件包管理器没有在运行，\n  你可以删除 %s。\n"
 
 #: src/pacman/util.c:116
 #, c-format
@@ -1888,9 +1853,7 @@ msgstr "错误：指示符不能同时用 %s \n"
 msgid ""
 "Test a pacman package for validity.\n"
 "\n"
-msgstr ""
-"测试 pacman 软件包的有效性。\n"
-"\n"
+msgstr "测试 pacman 软件包的有效性。\n\n"
 
 #: src/util/testpkg.c:57
 #, c-format
