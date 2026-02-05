@@ -212,6 +212,7 @@ static int sync_cleancache(int level)
 		/* step through the directory one file at a time */
 		while((ent = readdir(dir)) != NULL) {
 			char path[PATH_MAX];
+			struct stat buf;
 			int delete = 1;
 			alpm_pkg_t *localpkg = NULL, *pkg = NULL;
 			const char *local_name, *local_version;
@@ -253,7 +254,20 @@ static int sync_cleancache(int level)
 
 			/* short circuit for removing all files from cache */
 			if(level > 1) {
-				ret += unlink_verbose(path, 0);
+				if(stat(path, &buf) == -1) {
+					pm_printf(ALPM_LOG_ERROR, _("could not remove %s: %s\n"),
+							path, strerror(errno));
+				}
+
+				if(S_ISDIR(buf.st_mode)) {
+					if(rmrf(path)) {
+						pm_printf(ALPM_LOG_ERROR, _("could not remove %s: %s\n"),
+								path, strerror(errno));
+					}
+				} else {
+					ret += unlink_verbose(path, 0);
+				}
+
 				continue;
 			}
 
