@@ -4,18 +4,13 @@
 
 #include "ilovecandy.h"
 
-typedef struct {
-	const char *name;
-	char *character;
-	char *colour;
-} ConfigParam;
-
 ConfigParam parameters[] = {
 	{ "PROGRESS_BAR_TODO", "", ""},
 	{ "PROGRESS_BAR_DONE", "", ""},
 	{ "PACMAN_WHOOP", "", ""},
 	{ "PACMAN_NOM", "", ""},
 };
+const size_t parameters_count =sizeof(parameters)/sizeof(parameters[0]);
 
 
 int  read_config_file(){
@@ -33,9 +28,12 @@ int  read_config_file(){
 	}
 	yyjson_val *root= yyjson_doc_get_root(doc);
 
-	yyjson_val *name = yyjson_obj_get(root, "PACMAN_NOM");
-	printf("%s", yyjson_get_str(yyjson_obj_get(name,"character")));
-
+	for (int i=0 ; i<sizeof(parameters)/sizeof(parameters[0]) ; i++){
+		yyjson_val *param_name = yyjson_obj_get(root, parameters[i].name);
+		parameters[i].character = yyjson_get_str(yyjson_obj_get(param_name,"character"));
+		parameters[i].colour = yyjson_get_str(yyjson_obj_get(param_name, "colour"));
+		//printf("%s, %s \n", parameters[i].character, parameters[i].colour);
+	}
 	yyjson_doc_free(doc);
 	return 11;
 }
