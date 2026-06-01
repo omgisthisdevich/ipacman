@@ -39,6 +39,8 @@
 #include "util.h"
 #include "conf.h"
 
+#include "ilovecandy.h"
+
 /* download progress bar */
 static int total_enabled = 0;
 static off_t list_total = 0.0;
@@ -163,7 +165,8 @@ static void fill_progress(const int percent, const int proglen)
 			/* if special progress bar enabled */
 			if(config->chomp) {
 				if(i > hashlen - hash) {
-					putchar('-');
+					//putchar('-');
+					fputs("#", stdout);
 				} else if(i == hashlen - hash) {
 					if(percent % 2 == 0) {
 						fputs("\033[1;33m󰮯\033[m", stdout);

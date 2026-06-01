@@ -13,6 +13,7 @@ pacman_sources = files('''
   callback.h callback.c
   upgrade.c
   util.h util.c
+  ilovecandy.h ilovecandy.c
 '''.split())
 
 pacman_conf_sources = files('''
@@ -20,4 +21,5 @@ pacman_conf_sources = files('''
   util.h util.c
   callback.h callback.c
   conf.h conf.c
+  ilovecandy.h ilovecandy.c
 '''.split())

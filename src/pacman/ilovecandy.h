@@ -1,5 +1,5 @@
-
-
+#ifndef CONFIG_H
+#define CONFIG_H
 
 typedef struct {
 	const char *name;
@@ -8,6 +8,8 @@ typedef struct {
 } ConfigParam;
 
 
-extern ConfigParam parameters[];
-extern const size_t parameters_count;
+extern ConfigParam ilc_parameters[];
+extern const size_t ilc_parameters_count;
+#endif
 
+char* ilc_hello_world();

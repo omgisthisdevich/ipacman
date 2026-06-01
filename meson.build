@@ -126,6 +126,9 @@ libseccomp = dependency('libseccomp',
                         static : get_option('buildstatic'),
                         required : false)
 conf.set('HAVE_LIBSECCOMP', libseccomp.found())
+
+yyjson = dependency('yyjson')
+
 foreach header : [
     'linux/landlock.h',
     'mntent.h',
@@ -370,7 +373,7 @@ pacman_bin = executable(
   pacman_sources,
   include_directories : includes,
   link_with : [libalpm, libcommon],
-  dependencies : [libarchive],
+  dependencies : [libarchive, yyjson],
   install : true,
 )
 
@@ -379,7 +382,7 @@ executable(
   pacman_conf_sources,
   include_directories : includes,
   link_with : [libalpm, libcommon],
-  dependencies : [libarchive],
+  dependencies : [libarchive, yyjson],
   install : true,
 )
 
