@@ -161,6 +161,7 @@ static void fill_progress(const int percent, const int proglen)
 
 	read_config_file();
 
+
 	if(hashlen > 0) {
 		fputs(" [", stdout);
 		for(i = hashlen; i > 0; --i) {

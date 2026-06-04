@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <pwd.h>
 
 #include "yyjson.h"
 
@@ -15,7 +16,10 @@ const size_t ilc_parameters_count =sizeof(ilc_parameters)/sizeof(ilc_parameters[
 
 int read_config_file(){
 	char config_path[256];
-	snprintf(config_path, sizeof(config_path), "%s/.config/ipacman/ipacman.jsonc", getenv("HOME"));
+
+	struct passwd *pw = getpwnam(getenv("SUDO_USER")); /* Need a check */
+
+	snprintf(config_path, sizeof(config_path), "%s/.config/ipacman/ipacman.jsonc", pw->pw_dir);
 
 	yyjson_read_err err;
     yyjson_read_flag flags = YYJSON_READ_ALLOW_COMMENTS | YYJSON_READ_ALLOW_TRAILING_COMMAS;
