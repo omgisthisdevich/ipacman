@@ -12,4 +12,4 @@ extern ConfigParam ilc_parameters[];
 extern const size_t ilc_parameters_count;
 #endif
 
-char* ilc_hello_world();
+int read_config_file();

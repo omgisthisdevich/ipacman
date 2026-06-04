@@ -159,6 +159,8 @@ static void fill_progress(const int percent, const int proglen)
 	const int hash = percent * hashlen / 100;
 	int i;
 
+	read_config_file();
+
 	if(hashlen > 0) {
 		fputs(" [", stdout);
 		for(i = hashlen; i > 0; --i) {

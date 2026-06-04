@@ -13,7 +13,7 @@ ConfigParam ilc_parameters[] = {
 const size_t ilc_parameters_count =sizeof(ilc_parameters)/sizeof(ilc_parameters[0]);
 
 
-void read_config_file(){
+int read_config_file(){
 	char config_path[256];
 	snprintf(config_path, sizeof(config_path), "%s/.config/ipacman/ipacman.jsonc", getenv("HOME"));
 
@@ -24,7 +24,7 @@ void read_config_file(){
 
 	if (!doc){
 		fprintf(stderr, "ipacman config read error: %s, code %u", err.msg, err.code);
-		exit(-1);
+	return(-1);
 	}
 	yyjson_val *root= yyjson_doc_get_root(doc);
 
@@ -35,6 +35,7 @@ void read_config_file(){
 	//	printf("%s, %s \n", ilc_parameters[i].character, parameters[i].colour);
 	}
 	yyjson_doc_free(doc);
+	return 1;
 }
 
 //int main(void){
@@ -42,6 +43,3 @@ void read_config_file(){
 //	return 0;
 //}
 
-char* ilc_hello_world(){
-	return ("AAA");
-}
