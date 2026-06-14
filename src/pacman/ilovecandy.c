@@ -35,10 +35,11 @@ int read_config_file(){
 	for (int i=0 ; i<sizeof(ilc_parameters)/sizeof(ilc_parameters[0]) ; i++){
 		yyjson_val *param_name = yyjson_obj_get(root, ilc_parameters[i].name);
 		ilc_parameters[i].character = yyjson_get_str(yyjson_obj_get(param_name,"character"));
-		ilc_parameters[i].colour = yyjson_get_str(yyjson_obj_get(param_name, "colour"));
+		ilc_parameters[i].colour = yyjson_get_str(yyjson_obj_get(param_name, "color"));
 	//	printf("%s, %s \n", ilc_parameters[i].character, parameters[i].colour);
 	}
 	yyjson_doc_free(doc);
+
 	return 1;
 }
 
