@@ -22,13 +22,13 @@ int read_config_file(){
 	snprintf(config_path, sizeof(config_path), "%s/.config/ipacman/ipacman.jsonc", pw->pw_dir);
 
 	yyjson_read_err err;
-    yyjson_read_flag flags = YYJSON_READ_ALLOW_COMMENTS | YYJSON_READ_ALLOW_TRAILING_COMMAS;
+	yyjson_read_flag flags = YYJSON_READ_ALLOW_COMMENTS | YYJSON_READ_ALLOW_TRAILING_COMMAS;
 
 	yyjson_doc *doc = yyjson_read_file(config_path, flags, NULL, &err);
 
 	if (!doc){
-		fprintf(stderr, "ipacman config read error: %s, code %u", err.msg, err.code);
-	return(-1);
+		//fprintf(stderr, "ipacman config read error: %s, code %u", err.msg, err.code);
+		return(-1);
 	}
 	yyjson_val *root= yyjson_doc_get_root(doc);
 
