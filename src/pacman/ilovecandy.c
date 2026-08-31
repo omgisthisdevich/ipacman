@@ -5,13 +5,13 @@
 
 #include "ilovecandy.h"
 
-ConfigParam ilc_parameters[] = {
-	{ "PROGRESS_BAR_TODO", "", ""},
-	{ "PROGRESS_BAR_DONE", "", ""},
-	{ "PACMAN_WHOOP", "", ""},
-	{ "PACMAN_NOM", "", ""},
+ilc_Config ilc_parameters = {
+	.todo = {},
+	.done = {},
+	.pacman_C = {},
+	.pacman_c = {}
 };
-const size_t ilc_parameters_count =sizeof(ilc_parameters)/sizeof(ilc_parameters[0]);
+//const size_t ilc_parameters_count =sizeof(ilc_pailc_parameters)/sizeof(ilc_pailc_parameters[0]);
 
 
 int read_config_file(){
@@ -32,12 +32,17 @@ int read_config_file(){
 	}
 	yyjson_val *root= yyjson_doc_get_root(doc);
 
-	for (int i=0 ; i<sizeof(ilc_parameters)/sizeof(ilc_parameters[0]) ; i++){
+	/*
+	for (int i=0 ; i < 4 ; i++){
 		yyjson_val *param_name = yyjson_obj_get(root, ilc_parameters[i].name);
 		ilc_parameters[i].character = yyjson_get_str(yyjson_obj_get(param_name,"character"));
 		ilc_parameters[i].colour = yyjson_get_str(yyjson_obj_get(param_name, "color"));
-	//	printf("%s, %s \n", ilc_parameters[i].character, parameters[i].colour);
+	//	printf("%s, %s \n", ilc_parameters[i].character, pailc_parameters[i].colour);
 	}
+	*/
+	yyjson_val *todo = yyjson_obj_get(root, "PROGRESS_BAR_TODO") ;
+	ilc_parameters.todo.character = yyjson_get_str(yyjson_obj_get(todo, "character"));
+
 	yyjson_doc_free(doc);
 
 	return 1;
