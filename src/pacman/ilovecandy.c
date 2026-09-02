@@ -32,16 +32,9 @@ int read_config_file(){
 	}
 	yyjson_val *root= yyjson_doc_get_root(doc);
 
-	/*
-	for (int i=0 ; i < 4 ; i++){
-		yyjson_val *param_name = yyjson_obj_get(root, ilc_parameters[i].name);
-		ilc_parameters[i].character = yyjson_get_str(yyjson_obj_get(param_name,"character"));
-		ilc_parameters[i].colour = yyjson_get_str(yyjson_obj_get(param_name, "color"));
-	//	printf("%s, %s \n", ilc_parameters[i].character, pailc_parameters[i].colour);
-	}
-	*/
 	yyjson_val *todo = yyjson_obj_get(root, "PROGRESS_BAR_TODO") ;
 	ilc_parameters.todo.character = yyjson_get_str(yyjson_obj_get(todo, "character"));
+	ilc_parameters.todo.colour = yyjson_get_str(yyjson_obj_get(todo, "color"));
 
 	yyjson_doc_free(doc);
 

@@ -172,7 +172,7 @@ static void fill_progress(const int percent, const int proglen)
 				} else if(i == hashlen - hash) {
 					if(percent % 2 == 0) {
 						//fputs("\033[1;33mC\033[m", stdout);
-						fprintf(stdout, "\033[%sm%s", ilc_parameters.todo.colour, ilc_parameters.todo.character);
+						fprintf(stdout, "\033[%sm%s\033[m", ilc_parameters.todo.colour, ilc_parameters.todo.character);
 					} else {
 						fputs("\033[1;33mc\033[m", stdout);
 					}
