@@ -36,6 +36,9 @@ int read_config_file(){
 	ilc_parameters.todo.character = yyjson_get_str(yyjson_obj_get(todo, "character"));
 	ilc_parameters.todo.colour = yyjson_get_str(yyjson_obj_get(todo, "color"));
 
+	fprintf(stdout, "AAAAAA: \033[%sm%s\033[m", ilc_parameters.todo.colour, ilc_parameters.todo.character);
+
+
 	yyjson_doc_free(doc);
 
 	return 1;
