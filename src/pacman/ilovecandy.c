@@ -48,8 +48,3 @@ int read_config_file(){
 	return 1;
 }
 
-//int main(void){
-//	read_config_file();
-//	return 0;
-//}
-
