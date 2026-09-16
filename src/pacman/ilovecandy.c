@@ -6,10 +6,10 @@
 #include "ilovecandy.h"
 
 ilc_Config ilc_parameters = {
-	.todo = {},
-	.done = {},
-	.pacman_C = {},
-	.pacman_c = {}
+	.todo = 		{ .key = "PROGRESS_BAR_TODO" },
+	.done = 		{ .key = "PROGRESS_BAR_DONE" },
+	.pacman_C =		{ .key = "PACMAN_C" },
+	.pacman_c = 	{ .key = "PACMAN_NOM" }
 };
 //const size_t ilc_parameters_count =sizeof(ilc_pailc_parameters)/sizeof(ilc_pailc_parameters[0]);
 
@@ -32,7 +32,7 @@ int read_config_file(){
 	}
 	yyjson_val *root= yyjson_doc_get_root(doc);
 
-	yyjson_val *todo = yyjson_obj_get(root, "PROGRESS_BAR_TODO") ;
+	yyjson_val *todo = yyjson_obj_get(root, ilc_parameters.todo.key) ;
 	ilc_parameters.todo.character = yyjson_get_str(yyjson_obj_get(todo, "character"));
 	ilc_parameters.todo.colour = yyjson_get_str(yyjson_obj_get(todo, "color"));
 

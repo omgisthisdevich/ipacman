@@ -2,6 +2,7 @@
 #define CONFIG_H
 
 typedef struct {
+	const char *key ;
 	const char *character;
 	const char *colour;
 } ProgressBar;
