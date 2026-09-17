@@ -36,6 +36,18 @@ int read_config_file(){
 	ilc_parameters.todo.character = yyjson_get_str(yyjson_obj_get(todo, "character"));
 	ilc_parameters.todo.colour = yyjson_get_str(yyjson_obj_get(todo, "color"));
 
+	yyjson_val *done = yyjson_obj_get(root, ilc_parameters.done.key) ;
+	ilc_parameters.done.character = yyjson_get_str(yyjson_obj_get(done, "character"));
+	ilc_parameters.done.colour = yyjson_get_str(yyjson_obj_get(done, "color"));
+
+	yyjson_val *pacman_C = yyjson_obj_get(root, ilc_parameters.pacman_C.key) ;
+	ilc_parameters.pacman_C.character = yyjson_get_str(yyjson_obj_get(pacman_C, "character"));
+	ilc_parameters.pacman_C.colour = yyjson_get_str(yyjson_obj_get(pacman_C, "color"));
+
+	yyjson_val *pacman_c = yyjson_obj_get(root, ilc_parameters.pacman_c.key) ;
+	ilc_parameters.pacman_c.character = yyjson_get_str(yyjson_obj_get(pacman_c, "character"));
+	ilc_parameters.pacman_c.colour = yyjson_get_str(yyjson_obj_get(pacman_c, "color"));
+
 
 	yyjson_doc_free(doc);
 
