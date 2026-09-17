@@ -9,15 +9,20 @@ ilc_Config ilc_parameters = {
 	.todo = 		{ .key = "PROGRESS_BAR_TODO" },
 	.done = 		{ .key = "PROGRESS_BAR_DONE" },
 	.pacman_C =		{ .key = "PACMAN_C" },
-	.pacman_c = 	{ .key = "PACMAN_NOM" }
+	.pacman_c = 		{ .key = "PACMAN_NOM" }
 };
-//const size_t ilc_parameters_count =sizeof(ilc_pailc_parameters)/sizeof(ilc_pailc_parameters[0]);
 
 
 int read_config_file(){
 	char config_path[256];
 
-	struct passwd *pw = getpwnam(getenv("SUDO_USER")); /* Need a check */
+	const char *sudo_user = getenv("SUDO_USER");
+
+	if (!sudo_user) {
+		return -1;
+	}
+
+	struct passwd *pw = getpwnam(sudo_user);
 
 	snprintf(config_path, sizeof(config_path), "%s/.config/ipacman/ipacman.jsonc", pw->pw_dir);
 
@@ -27,7 +32,6 @@ int read_config_file(){
 	yyjson_doc *doc = yyjson_read_file(config_path, flags, NULL, &err);
 
 	if (!doc){
-		//fprintf(stderr, "ipacman config read error: %s, code %u", err.msg, err.code);
 		return(-1);
 	}
 	yyjson_val *root= yyjson_doc_get_root(doc);
@@ -54,3 +58,8 @@ int read_config_file(){
 	return 1;
 }
 
+
+static void ilc_print_to_debug_log(const char *message) {
+	FILE *log_file = fopen("/tmp/ipacman_debug.log", "a");
+	if (log_file == NULL) return;
+}
