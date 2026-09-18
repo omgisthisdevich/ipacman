@@ -168,16 +168,15 @@ static void fill_progress(const int percent, const int proglen)
 			/* if special progress bar enabled */
 			if(config->chomp) {
 				if(i > hashlen - hash) {
-					putchar('-');
+					fprintf(stdout, "\033[%sm%s\033[m", ilc_parameters.done.colour, ilc_parameters.done.character);
 				} else if(i == hashlen - hash) {
 					if(percent % 2 == 0) {
-						//fputs("\033[1;33mC\033[m", stdout);
 						fprintf(stdout, "\033[%sm%s\033[m", ilc_parameters.pacman_C.colour, ilc_parameters.pacman_C.character);
 					} else {
-						fputs("\033[1;33mc\033[m", stdout);
+						fprintf(stdout, "\033[%sm%s\033[m", ilc_parameters.pacman_c.colour, ilc_parameters.pacman_c.character);
 					}
 				} else if(i % 3 == 0) {
-					fputs("\033[0;37mo\033[m", stdout);
+						fprintf(stdout, "\033[%sm%s\033[m", ilc_parameters.todo.colour, ilc_parameters.todo.character);
 				} else {
 					fputs("\033[0;37m \033[m", stdout);
 				}

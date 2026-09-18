@@ -17,12 +17,10 @@ int read_config_file(){
 	char config_path[256];
 
 	const char *sudo_user = getenv("SUDO_USER");
-
-	if (!sudo_user) {
-		return -1;
-	}
+	if (!sudo_user) return(-1);
 
 	struct passwd *pw = getpwnam(sudo_user);
+	if (!pw) return(-1);
 
 	snprintf(config_path, sizeof(config_path), "%s/.config/ipacman/ipacman.jsonc", pw->pw_dir);
 
@@ -58,8 +56,3 @@ int read_config_file(){
 	return 1;
 }
 
-
-static void ilc_print_to_debug_log(const char *message) {
-	FILE *log_file = fopen("/tmp/ipacman_debug.log", "a");
-	if (log_file == NULL) return;
-}
